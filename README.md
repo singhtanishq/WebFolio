@@ -1,6 +1,6 @@
 - 👋 Hi, I’m Tanishq Singh.
-- 👀 I’m interested in Python Programming.
-- 🌱 I have learnt python programming language.
+- 👀 I’m interested in Python coding.
+- 🌱 I learnt Python Programming language.
 - 📫 Contact me: tanishq.rc@gmail.com
 
 <!---
