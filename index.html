@@ -1,0 +1,1089 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Tanishq Singh — Consultancy & Software Services</title>
+  <meta name="description" content="Consultancy sessions and software products by Tanishq Singh. Book appointments, purchase software, and learn about our policies." />
+
+  <link rel="icon" href="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" sizes="any" />
+
+  <style>
+    :root{
+      /* Color tokens: 1 primary + neutrals + one accent (max 5 total) */
+      --color-bg: #ffffff;           /* neutral background */
+      --color-text: #0f172a;         /* slate-900 */
+      --color-muted: #475569;        /* slate-600 */
+      --color-primary: #000000;      /* sky-500 */
+      --color-accent: #14b8a6;       /* teal-500 */
+
+      --card-bg: rgba(255,255,255,0.60);
+      --card-border: rgba(255,255,255,0.65);
+      --glass-shadow: 0 8px 30px rgba(2,6,23,0.08);
+
+      --radius: 16px;
+
+      --max-w: 1200px;
+    }
+
+    * { box-sizing: border-box; }
+    html, body { height: 100%; }
+    body{
+      margin: 0;
+      font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color: var(--color-text);
+      background: var(--color-bg) center/cover no-repeat fixed;
+      line-height: 1.6;
+    }
+
+    /* Background cloud image layer */
+    .bg-clouds::before{
+      content:"";
+      position: fixed;
+      inset: 0;
+      z-index: -2;
+      background: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef?q=80&w=1600&auto=format&fit=crop') center/cover no-repeat;
+      filter: saturate(1.1) brightness(1.02);
+    }
+    /* Subtle white film layer */
+    .bg-clouds::after{
+      content:"";
+      position: fixed;
+      inset: 0;
+      z-index: -1;
+      background: rgba(255,255,255,0.45);
+      backdrop-filter: blur(6px);
+    }
+
+    a { color: var(--color-primary); text-decoration: none; }
+    a:hover { color: #0f172a; }
+
+    .container { width: 100%; max-width: var(--max-w); margin: 0 auto; padding: 0 20px; }
+
+    /* Header */
+    header{
+      position: sticky; top: 0; z-index: 20;
+      backdrop-filter: saturate(1.2) blur(12px);
+      background: rgba(255,255,255,0.65);
+      border-bottom: 1px solid var(--card-border);
+    }
+    .nav{
+      display: flex; align-items: center; justify-content: space-between;
+      min-height: 64px;
+    }
+    .brand{
+      display: flex; align-items: center; gap: 12px; font-weight: 700; letter-spacing: .2px;
+    }
+    .brand img{ width: 28px; height: 28px; border-radius: 6px; }
+    nav ul{ display: flex; gap: 14px; list-style: none; margin: 0; padding: 0; }
+    nav a{
+      display: inline-block; padding: 8px 12px; border-radius: 10px; font-weight: 600;
+    }
+    nav a.active{
+      background: rgba(14,165,233,0.12);
+      color: var(--color-primary);
+      text-decoration: none;
+    }
+
+    /* Hero */
+    .hero{
+      padding: 72px 0 36px;
+    }
+    .hero-inner{
+      display: grid; gap: 20px; align-items: center;
+      grid-template-columns: 1.2fr 1fr;
+    }
+    .hero-card{
+      background: var(--card-bg);
+      border: 1px solid var(--card-border);
+      border-radius: var(--radius);
+      box-shadow: var(--glass-shadow);
+      padding: 28px;
+      backdrop-filter: blur(20px) saturate(1.1);
+    }
+    .eyebrow{
+      font-size: 12px; letter-spacing: 1.2px; text-transform: uppercase; color: var(--color-muted);
+    }
+    .hero h1{
+      margin: 6px 0 12px; line-height: 1.2; font-size: clamp(28px, 4vw, 40px);
+      font-weight: 800;
+    }
+    .lead{ color: var(--color-muted); font-size: 16px; }
+
+    .hero-cta{ display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+
+    .btn{
+      appearance: none; border: 0; border-radius: 12px; padding: 10px 14px; font-weight: 700; cursor: pointer;
+      box-shadow: 0 4px 12px rgba(2,6,23,0.08);
+      transition: transform .06s ease, box-shadow .2s ease, background .2s ease;
+    }
+    .btn:active{ transform: translateY(1px); }
+    .btn-primary{ background: var(--color-primary); color: #fff; }
+    .btn-primary:hover{ box-shadow: 0 6px 18px rgba(14,165,233,.28); }
+    .btn-glass{
+      background: rgba(255,255,255,0.6);
+      border: 1px solid var(--card-border);
+      color: var(--color-text);
+      backdrop-filter: blur(12px);
+    }
+    .btn-accent{ background: var(--color-accent); color: #fff; }
+
+    .hero-media{
+      aspect-ratio: 16/10; border-radius: var(--radius);
+      overflow: hidden; position: relative;
+      border: 1px solid var(--card-border);
+      background: rgba(255,255,255,0.3);
+      box-shadow: var(--glass-shadow);
+      backdrop-filter: blur(10px);
+    }
+    .hero-media img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+
+    /* Section wrapper (glass) */
+    .section{
+      margin: 28px 0 60px;
+    }
+    .section .card{
+      background: var(--card-bg); border: 1px solid var(--card-border);
+      border-radius: var(--radius); box-shadow: var(--glass-shadow);
+      padding: 22px; backdrop-filter: blur(18px) saturate(1.05);
+    }
+    .section h2{ margin: 0 0 6px; font-size: clamp(20px, 3vw, 28px); }
+    .section p{ margin: 0 0 10px; color: var(--color-muted); }
+
+    /* Catalog grid */
+    .grid{
+      display: grid; gap: 16px;
+      grid-template-columns: repeat(12, 1fr);
+    }
+    .col-4{ grid-column: span 4; }
+    .col-6{ grid-column: span 6; }
+    .col-12{ grid-column: span 12; }
+
+    @media (max-width: 980px){
+      .hero-inner{ grid-template-columns: 1fr; }
+      .col-4{ grid-column: span 6; }
+      .col-6{ grid-column: span 12; }
+    }
+    @media (max-width: 640px){
+      .col-4{ grid-column: span 12; }
+    }
+
+    .product{
+      display: grid; gap: 12px;
+      grid-template-rows: auto 1fr auto;
+      height: 100%;
+    }
+    .product .media{
+      border-radius: 12px; overflow: hidden; border: 1px solid var(--card-border);
+      aspect-ratio: 16/9; background: rgba(255,255,255,0.35);
+    }
+    .product .media img{ width: 100%; height: 100%; object-fit: cover; display: block; }
+    .product h3{ margin: 0; font-size: 18px; }
+    .price{ font-weight: 800; color: var(--color-text); }
+    .muted{ color: var(--color-muted); font-size: 14px; }
+
+    .inline-controls{ display: flex; gap: 8px; align-items: center; flex-wrap: wrap; }
+    .input{
+      border-radius: 10px; border: 1px solid var(--card-border); background: rgba(255,255,255,0.8);
+      padding: 10px 12px; font-weight: 600; width: 140px;
+      outline: none;
+    }
+    .input:focus{ box-shadow: 0 0 0 3px rgba(14,165,233,0.2); border-color: var(--color-primary); }
+
+    /* Content pages */
+    .page h2{ margin-top: 0; }
+    .page h3{ margin: 18px 0 8px; font-size: 18px; }
+    .page ul{ padding-left: 18px; margin: 6px 0 12px; }
+    .small{ font-size: 13px; color: var(--color-muted); }
+
+    /* Footer */
+    footer{
+      padding: 26px 0 40px; margin-top: 40px;
+      background: rgba(255, 255, 255, 0.65);
+      border-top: 1px solid var(--card-border);
+      backdrop-filter: blur(10px);
+    }
+    .footer-grid{
+      display: grid; gap: 18px; grid-template-columns: repeat(12,1fr);
+    }
+    .footer-col{ grid-column: span 4; }
+    .footer-col h4{ margin: 0 0 8px; }
+    .footer-col ul{ list-style: none; padding: 0; margin: 0; }
+    .footer-col li{ margin: 6px 0; }
+    .copyright{ margin-top: 16px; font-size: 13px; color: var(--color-muted); }
+
+    /* Accessibility live region */
+    .sr-only{ position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+
+    /* Responsive Styles */
+@media (max-width: 1024px) {
+  nav ul {
+    gap: 1rem;
+  }
+  .section {
+    padding: 2rem 1rem;
+  }
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  nav {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav ul {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  nav ul li {
+    width: 100%;
+  }
+
+  nav ul li a {
+    display: block;
+    width: 100%;
+    padding: 0.75rem 0;
+  }
+
+  .hero {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  footer ul {
+    padding: 0;
+  }
+
+  footer li {
+    list-style: none;
+  }
+
+  input, textarea, button, select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 1.5rem;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
+  }
+
+  .card {
+    padding: 1rem;
+  }
+
+  nav ul {
+    gap: 0.5rem;
+  }
+}
+/* Mobile menu styling */
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.8rem;
+  color: white;
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .menu-toggle {
+    display: block;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    background: rgba(0, 0, 0, 0.85);
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    padding: 1rem 0;
+    border-radius: 0 0 10px 10px;
+  }
+
+  nav ul.active {
+    display: flex;
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 0.75rem;
+  }
+
+  nav ul li a:hover {
+    background: rgba(255, 255, 255, 0.1);
+    transition: 0.3s;
+  }
+}
+/* Mobile menu styling */
+.menu-toggle {
+  display: none;
+  background: rgba(255, 251, 232, 0.396);
+  border: none;
+  font-size: 1.8rem;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  z-index: 1001;
+  border-radius: 15px;
+  width: 50%;
+  margin-left: 50%;
+}
+
+/* For smaller screens */
+@media (max-width: 768px) {
+  nav {
+    position: relative;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+  }
+
+  .menu-toggle {
+    display: block;
+    position: relative;
+    z-index: 1001;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.721);
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    padding: 1rem 0;
+    border-radius: 0 0 10px 10px;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.3s ease-in-out;
+    z-index: 1000;
+    border-radius: 15px;
+  }
+
+  nav ul.active {
+    transform: scaleY(1);
+  }
+
+  nav ul li {
+    width: 100%;
+    text-align: center;
+    margin: 0.5rem 0;
+  }
+
+  nav ul li a {
+    color: #fff;
+    display: block;
+    padding: 0.75rem 0;
+    width: 100%;
+    font-size: 1rem;
+    transition: background 0.3s;
+  }
+
+  nav ul li a:hover {
+    color: #000000;
+    background: rgb(255, 255, 255);
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav ul li a {
+    color: #ffffff !important;           /* All links white */
+    display: block;
+    padding: 0.75rem 0;
+    width: 100%;
+    font-size: 1rem;
+    transition: background 0.3s, color 0.3s;
+  }
+
+  nav ul li a:hover {
+    background:rgba(255, 255, 255, 0.319);
+    color: #000000;
+  }
+
+  nav ul li a.active {
+    background: rgba(255, 255, 255, 0.8);
+    color: #000000 !important;           /* Bright cyan/blue highlight */
+    font-weight: 600;
+  }
+}
+
+.footer-social {
+  display: flex;
+  justify-content: left; /* Center horizontally */
+  gap: 15px; /* Space between icons */
+  margin-top: 1rem;
+}
+
+.footer-social a img {
+  width: 25px;
+  height: 25px;
+  filter: brightness(0); /* White icons for dark footer */
+  transition: transform 0.3s;
+}
+
+.footer-social a:hover img {
+  transform: scale(1.2);
+  filter: brightness(0); /* Slight color change on hover */
+}
+
+/* Base button styles */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Primary button (Browse Catalog) */
+.btn-primary {
+  background-color: #000; /* black box */
+  color: #fff; /* white text */
+  border: 1px solid #000;
+}
+
+.btn-primary:hover {
+  background-color: #fff; /* white box */
+  color: #000; /* black text */
+  border: 1px solid #000;
+}
+
+/* Glass button (Quick Pay) */
+.btn-glass {
+  background-color: rgba(255,255,255,0.1);
+  color: #000;
+  border: 1px solid #000;
+}
+
+.btn-glass:hover {
+  background-color: #000; /* black box */
+  color: #fff; /* white text */
+  border: 1px solid #000;
+}
+
+/* Accent button (Learn More) */
+.btn-accent {
+  background-color: #ff6600; /* example accent */
+  color: #fff;
+  border: none;
+}
+
+.btn-accent:hover {
+  opacity: 0.85; /* just a subtle hover effect */
+}
+/* Base button */
+.btn {
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Browse Catalog - Primary */
+.btn-primary {
+  background-color: #1a3d7c; /* Deep Blue */
+  color: #fff;
+  border: 1px solid #1a3d7c;
+}
+.btn-primary:hover {
+  background-color: #4a7edb; /* Light Blue */
+  color: #fff;
+  border: 1px solid #4a7edb;
+}
+
+/* Quick Pay - Glass */
+.btn-glass {
+  background-color: #cc5200; /* Orange */
+  color: #fff;
+  border: 1px solid #cc5200;
+}
+.btn-glass:hover {
+  background-color: #ff6600; /* Dark Orange */
+  color: #fff;
+  border: 1px solid #ff6600;
+}
+
+/* Learn More - Accent */
+.btn-accent {
+  background-color: #1e7e34; /* Green */
+  color: #fff;
+  border: 1px solid #1e7e34;
+}
+.btn-accent:hover {
+  background-color: #28a745; /* Dark Green */
+  color: #fff;
+  border: 1px solid #28a745;
+}
+
+
+  </style>
+</head>
+<body class="bg-clouds">
+  <header role="banner" aria-label="Site header">
+    <div class="container nav">
+      <div class="brand">
+        <img src="image/logo.png" />
+        <span>Tanishq Singh</span>
+      </div>
+      <nav aria-label="Primary">
+        <button class="menu-toggle" aria-label="Toggle Menu">☰</button>
+        <ul>
+          <li><a href="#home" data-link>Home</a></li>
+          <li><a href="#about" data-link>About</a></li>
+          <li><a href="#contact" data-link>Contact</a></li>
+          <li><a href="#terms" data-link>Terms</a></li>
+          <li><a href="#privacy" data-link>Privacy</a></li>
+          <li><a href="#refunds" data-link>Return & Refund</a></li>
+          <li><a href="#cancellation" data-link>Cancellation</a></li>
+          <li><a href="#shipping" data-link>Shipping</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="app" class="container" role="main">
+    <div id="route-live" class="sr-only" aria-live="polite">Navigated.</div>
+
+    
+    <section id="home" class="route">
+      <div class="hero">
+        <div class="hero-inner">
+          <div class="hero-card">
+            <div class="eyebrow">Consultancy & Software</div>
+            <h1 class="text-balance">Grow faster with expert guidance and modern software by Tanishq Singh</h1>
+            <p class="lead">Book 1:1 consultancy sessions or purchase production-ready software tools. Transparent pricing in INR. Digital delivery PAN India.</p>
+            <div class="hero-cta">
+              <a class="btn btn-primary" href="#catalog">Browse Catalog</a>
+              <button class="btn btn-glass" type="button" onclick="redirectToPayU('Hero CTA')"><b>Quick Pay</b></button>
+              <a class="btn btn-accent" href="#about">Learn More</a>
+            </div>
+          </div>
+          <figure class="hero-media" aria-label="Illustration">
+            <img src="image/tech.png" alt="Soft clouds background with glassy interface overlay" />
+          </figure>
+        </div>
+      </div>
+
+      
+      <div id="catalog" class="section">
+        <div class="card">
+          <h2 class="text-balance">Catalog</h2>
+          <p>Choose a consultancy session (customizable amount) or order software with fixed prices. All payments are securely processed via PayU.</p>
+          <div class="grid" role="list" aria-label="Products and services">
+
+            <article class="product col-6" role="listitem">
+              <div class="media">
+                <img src="image/consult.png" alt="Consultation session" />
+              </div>
+              <div>
+                <h3>1:1 Consultancy Session</h3>
+                <p class="muted">Strategy, architecture reviews, growth & GTM guidance. 60-minute video call. Amount is customizable.</p>
+                <div class="inline-controls" aria-label="Set custom amount">
+                  <label for="consult-amt" class="sr-only">Custom amount in INR</label>
+                  <input id="consult-amt" class="input" type="number" min="1" step="1" placeholder="Amount (₹)" />
+                  <label for="consult-date" class="sr-only">Preferred date</label>
+                  <input id="consult-date" class="input" type="date" />
+                </div>
+                <p class="small">Note: You can set or confirm the final amount on the PayU page as well.</p>
+              </div>
+              <div class="inline-controls">
+                <button class="btn btn-primary" type="button" onclick="bookConsultancy()">Book Now</button>
+                <button class="btn btn-glass" type="button" onclick="redirectToPayU('Consultancy Quick')">Quick Pay</button>
+              </div>
+            </article>
+
+             
+            <article class="product col-6" role="listitem">
+              <div class="media">
+                <img src="image/toolkit.png" alt="Deployment toolkit software" />
+              </div>
+              <div>
+                <h3>TS Deploy Toolkit (Pro)</h3>
+                <p class="muted">Automations for CI/CD, zero-downtime rollouts, secret management, and audit logs.</p>
+                <div class="price">₹ 7,499</div>
+              </div>
+              <div class="inline-controls">
+                <button class="btn btn-primary" type="button" onclick="orderSoftware('TS Deploy Toolkit (Pro)', 7499)">Order Now</button>
+                <button class="btn btn-glass" type="button" onclick="redirectToPayU('Deploy Toolkit')">Quick Pay</button>
+              </div>
+            </article>
+
+            <article class="product col-4" role="listitem">
+              <div class="media">
+                <img src="image/views.png" alt="Analytics dashboard software" />
+              </div>
+              <div>
+                <h3>InsightBoard Analytics</h3>
+                <p class="muted">Plug-and-play dashboards, funnels, and retention views for product teams.</p>
+                <div class="price">₹ 4,999</div>
+              </div>
+              <div class="inline-controls">
+                <button class="btn btn-primary" type="button" onclick="orderSoftware('InsightBoard Analytics', 4999)">Order Now</button>
+              </div>
+            </article>
+
+            <article class="product col-4" role="listitem">
+              <div class="media">
+                <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=1200&auto=format&fit=crop" alt="Security scanner software" />
+              </div>
+              <div>
+                <h3>SecureScan CLI</h3>
+                <p class="muted">Automated dependency and secret scanning with actionable remediation tips.</p>
+                <div class="price">₹ 3,499</div>
+              </div>
+              <div class="inline-controls">
+                <button class="btn btn-primary" type="button" onclick="orderSoftware('SecureScan CLI', 3499)">Order Now</button>
+              </div>
+            </article>
+
+            <article class="product col-4" role="listitem">
+              <div class="media">
+                <img src="https://images.unsplash.com/photo-1484417894907-623942c8ee29?q=80&w=1200&auto=format&fit=crop" alt="Custom software development" />
+              </div>
+              <div>
+                <h3>Custom Software Development</h3>
+                <p class="muted">Scoping, build, and delivery for your unique business needs. Pricing depends on scope.</p>
+                <div class="inline-controls" aria-label="Set custom amount for custom dev">
+                  <label for="custom-dev-amt" class="sr-only">Custom amount in INR</label>
+                  <input id="custom-dev-amt" class="input" type="number" min="1" step="1" placeholder="Amount (₹)" />
+                </div>
+              </div>
+              <div class="inline-controls">
+                <button class="btn btn-primary" type="button" onclick="customDev()">Book Now</button>
+                <button class="btn btn-glass" type="button" onclick="redirectToPayU('Custom Dev Quick')">Quick Pay</button>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="route" hidden>
+      <div class="section">
+        <div class="card page">
+          <h2>About Us</h2>
+          <p>We are <strong>Tanishq Singh</strong>, a consultancy and software services company helping startups and enterprises ship faster, scale reliably, and build products customers love. We combine hands-on execution with pragmatic guidance.</p>
+          <p>Areas of expertise include product strategy, cloud-native architecture, performance optimization, and developer tooling. Our software products are designed to reduce toil and accelerate outcomes.</p>
+          <p class="small">Registered Address (for statutory correspondence only): SA 6/186 NL1, Sri Nagar Colony, Pahariya, Varanasi, Uttar Pradesh, 221007, India. We deliver and serve <strong>PAN India</strong> (digital delivery), not to the registered address.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="route" hidden>
+      <div class="section">
+        <div class="card page">
+          <h2>Contact Us</h2>
+          <p><strong>Registered Address:</strong><br/>
+            SA 6/186 NL1, Sri Nagar Colony, Pahariya, Varanasi, Uttar Pradesh, 221007, India
+          </p>
+          <p><strong>Phone:</strong> +91 8881155518<br/>
+             <strong>Email:</strong> <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a>
+          </p>
+          <p class="small">For support, billing, or scheduling assistance, include your order reference and preferred callback time.</p>
+
+          <h3>Quick Message</h3>
+          <form onsubmit="return sendMail(event)" aria-label="Contact form">
+            <div class="grid">
+              <div class="col-6">
+                <label class="sr-only" for="name">Your Name</label>
+                <input id="name" class="input" placeholder="Your Name" required />
+              </div>
+              <div class="col-6">
+                <label class="sr-only" for="email">Your Email</label>
+                <input id="email" type="email" class="input" placeholder="you@example.com" required />
+              </div>
+              <div class="col-12" style="margin-top: 8px;">
+                <label class="sr-only" for="msg">Message</label>
+                <textarea id="msg" class="input" placeholder="How can we help?" rows="4" style="width:100%;"></textarea>
+              </div>
+              <div class="col-12" style="margin-top: 8px;">
+                <button class="btn btn-primary" type="submit">Send</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+ 
+    <section id="terms" class="route" hidden>
+      <div class="section">
+        <div class="card page">
+          <h2>Terms & Conditions</h2>
+          <p><strong>This website is operated by Tanishq Singh.</strong> By accessing or using this website and our services, you agree to be bound by the following Terms & Conditions.</p>
+
+          <h3>1. Parties</h3>
+          <p>These Terms are a legal agreement between you (“Customer”, “User”, “You”) and <strong>Tanishq Singh</strong> (“Company”, “We”, “Us”).</p>
+
+          <h3>2. Services</h3>
+          <p>We provide consultancy sessions and software products. Consultancy is delivered via online meetings; software is delivered digitally. Deliveries and services are provided <strong>PAN India</strong>. The registered address is for correspondence only and is not a delivery address.</p>
+
+          <h3>3. Pricing & Payments</h3>
+          <p>All prices are listed in INR. Payments are processed securely via PayU. For consultancy, the amount may be customized by the customer prior to payment. By placing an order or booking, you authorize us to charge your selected payment method.</p>
+
+          <h3>4. Appointments & Conduct</h3>
+          <p>You must join consultancy sessions on time. If you are late, we may reduce session time accordingly. We reserve the right to decline or terminate services for misuse, abuse, or unlawful behavior.</p>
+
+          <h3>5. Software License</h3>
+          <p>Software purchases grant you a non-exclusive, non-transferable license as specified in the product description. Reverse engineering, redistribution, or resale is prohibited unless explicitly permitted.</p>
+
+          <h3>6. Intellectual Property</h3>
+          <p>All content, trademarks, logos, and software are owned by or licensed to us. No rights are granted except as expressly stated.</p>
+
+          <h3>7. Warranties & Disclaimers</h3>
+          <p>Services and software are provided “as is” and “as available”. We disclaim all implied warranties to the fullest extent permitted by law. Consultancy constitutes guidance and does not guarantee specific outcomes.</p>
+
+          <h3>8. Limitation of Liability</h3>
+          <p>To the maximum extent permitted by law, our liability is limited to the amount you paid for the specific service or product giving rise to the claim.</p>
+
+          <h3>9. Governing Law & Dispute Resolution</h3>
+          <p>These Terms are governed by Indian law. Disputes will be subject to the exclusive jurisdiction of courts in Varanasi, Uttar Pradesh, India.</p>
+
+          <h3>10. Changes to Terms</h3>
+          <p>We may update these Terms from time to time. Continued use after changes constitutes acceptance. Last updated: <span id="terms-date"></span>.</p>
+
+          <h3>11. Contact</h3>
+          <p>Queries about the Terms should be sent to <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="privacy" class="route" hidden>
+      <div class="section">
+        <div class="card page">
+          <h2>Privacy Policy</h2>
+          <p>We respect your privacy and are committed to protecting your personal data. This policy explains what data we collect, how we use it, and your rights.</p>
+
+          <h3>1. Data We Collect</h3>
+          <ul>
+            <li>Identity and contact details (name, email, phone).</li>
+            <li>Order and payment metadata (via PayU; we do not store full card details).</li>
+            <li>Communications you send to us (emails, messages, meeting notes).</li>
+            <li>Technical data (device, browser, approximate location, cookies/analytics).</li>
+          </ul>
+
+          <h3>2. How We Use Data</h3>
+          <ul>
+            <li>To provide consultancy sessions and deliver software licenses.</li>
+            <li>To process payments, invoicing, and receipts via PayU.</li>
+            <li>To provide support, respond to inquiries, and improve our services.</li>
+            <li>To comply with legal obligations and prevent fraud.</li>
+          </ul>
+
+          <h3>3. Sharing & Disclosure</h3>
+          <p>We may share data with service providers (e.g., PayU for payment processing) strictly for service delivery. We do not sell your personal data.</p>
+
+          <h3>4. Data Retention</h3>
+          <p>We retain data only as long as necessary for the purposes outlined, legal requirements, and record-keeping.</p>
+
+          <h3>5. Your Rights</h3>
+          <p>You may request access, correction, or deletion of your data, subject to legal limitations. Contact: <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a>.</p>
+
+          <h3>6. Cookies</h3>
+          <p>We use essential and analytics cookies to provide and improve the website. You may control cookies via your browser settings.</p>
+
+          <h3>7. Security</h3>
+          <p>We implement reasonable technical and organizational measures. No system is 100% secure.</p>
+
+          <h3>8. Updates</h3>
+          <p>We may update this policy periodically. Last updated: <span id="privacy-date"></span>.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="refunds" class="route" hidden>
+      <div class="section">
+        <div class="card page">
+          <h2>Return & Refund Policy</h2>
+          <p>We aim for your complete satisfaction. The following terms describe eligibility, durations, and refund modes.</p>
+
+          <h3>1. Consultancy Sessions</h3>
+          <ul>
+            <li><strong>Refund window:</strong> Full refund if cancelled at least <strong>48 hours</strong> before the scheduled start time.</li>
+            <li><strong>Partial refund:</strong> 50% refund if cancelled between <strong>48–24 hours</strong> prior.</li>
+            <li><strong>No refund:</strong> Cancellations <strong>within 24 hours</strong> of the session start or no-shows.</li>
+          </ul>
+
+          <h3>2. Software Products</h3>
+          <ul>
+            <li><strong>Refund window:</strong> Up to <strong>7 days</strong> from purchase date if the license key has <strong>not been activated</strong>.</li>
+            <li><strong>Ineligible:</strong> Licenses already activated, customized builds, or services already rendered.</li>
+          </ul>
+
+          <h3>3. Refund Mode & Timeline</h3>
+          <p>Approved refunds are issued to the <strong>original payment method via PayU</strong>. Processing typically takes <strong>5–7 business days</strong> after approval; bank timelines may vary.</p>
+
+          <h3>4. How to Request</h3>
+          <p>Email <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a> with your order details and reason. We may request additional information to validate your claim.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="cancellation" class="route" hidden>
+      <div class="section">
+        <div class="card page">
+          <h2>Cancellation Policy</h2>
+          <h3>1. Consultancy</h3>
+          <ul>
+            <li><strong>Free cancellation:</strong> Up to <strong>48 hours</strong> before session start.</li>
+            <li><strong>50% charge:</strong> 48–24 hours prior.</li>
+            <li><strong>100% charge:</strong> Within 24 hours or no-show.</li>
+          </ul>
+
+          <h3>2. Software Orders</h3>
+          <ul>
+            <li><strong>Within 24 hours</strong> of purchase and <strong>before license activation</strong>: eligible for cancellation.</li>
+            <li>After activation or customization has begun: not cancellable.</li>
+          </ul>
+
+          <h3>3. How to Cancel</h3>
+          <p>Contact us at <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a> with your order reference and reason for cancellation.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="shipping" class="route" hidden>
+      <div class="section">
+        <div class="card page">
+          <h2>Shipping & Delivery Policy</h2>
+          <p>We provide <strong>digital delivery PAN India</strong>. There is no physical shipment for consultancy or downloadable software products.</p>
+
+          <h3>1. Delivery Timelines</h3>
+          <ul>
+            <li><strong>Consultancy:</strong> Meeting links and calendar invites are emailed immediately upon booking confirmation.</li>
+            <li><strong>Software:</strong> License keys or download links are sent via email typically <strong>within minutes</strong> of successful payment.</li>
+          </ul>
+
+          <h3>2. Address Clarification</h3>
+          <p>Our registered address is used for statutory correspondence only and <strong>is not a delivery address</strong>. All services and products are delivered digitally across India.</p>
+
+          <h3>3. Non-Receipt</h3>
+          <p>If you do not receive expected emails within 1 hour of payment, check your spam folder and then contact us at <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a>.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="#about" data-link>About</a></li>
+            <li><a href="#contact" data-link>Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#terms" data-link>Terms & Conditions</a></li>
+            <li><a href="#privacy" data-link>Privacy Policy</a></li>
+            <li><a href="#refunds" data-link>Return & Refund Policy</a></li>
+            <li><a href="#cancellation" data-link>Cancellation Policy</a></li>
+            <li><a href="#shipping" data-link>Shipping Policy</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact</h4>
+          <ul>
+            <li>Address: SA 6/186 NL1, Sri Nagar Colony, Pahariya, Varanasi, Uttar Pradesh, 221007, India</li>
+            <li>Phone: +91 8881155518</li>
+            <li>Email: <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a></li>
+          </ul>
+          <br>
+          <div class="footer-social">
+            <a href="https://instagram.tanishqsingh.in" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" alt="Instagram">
+            </a>
+            <a href="https://linkedin.tanishqsingh.in" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/linkedin.svg" alt="LinkedIn">
+            </a>
+            <a href="https://facebook.tanishqsingh.in" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" alt="Facebook">
+            </a>
+            <a href="https://x.tanishqsingh.in" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/twitter.svg" alt="X/Twitter">
+            </a>
+            <a href="https://telegram.tanishqsingh.in" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/telegram.svg" alt="Telegram">
+            </a>
+            <a href="https://whatsapp.tanishqsingh.in" target="_blank" rel="noopener noreferrer">
+              <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/whatsapp.svg" alt="WhatsApp">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <p class="copyright">© <span id="year"></span> Tanishq Singh. All rights reserved.</p>
+      <p class="small">This website is operated by Tanishq Singh.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Routing: show only the selected section; default to #home
+    const ROUTES = ["home","about","contact","terms","privacy","refunds","cancellation","shipping"];
+    const payuLink = "https://payu.in/pay/72603F444B3C27FD1BB9E4BAF5D96C4B";
+
+    function setActiveLink(hash){
+      document.querySelectorAll('nav a[data-link]').forEach(a => a.classList.remove('active'));
+      const link = document.querySelector(`nav a[href="${hash}"]`);
+      if(link) link.classList.add('active');
+    }
+
+    function showRoute(route){
+      ROUTES.forEach(id => {
+        const el = document.getElementById(id);
+        if (!el) return;
+        if (id === route) { el.hidden = false; }
+        else { el.hidden = true; }
+      });
+      const live = document.getElementById('route-live');
+      if (live) live.textContent = `Navigated to ${route}.`;
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      document.title = `Tanishq Singh — ${route.charAt(0).toUpperCase()+route.slice(1)}`;
+      setActiveLink(`#${route}`);
+    }
+
+    function resolveRoute(){
+      const hash = (location.hash || "#home").toLowerCase();
+      const route = hash.replace("#","");
+      if (!ROUTES.includes(route)) { showRoute("home"); setActiveLink("#home"); return; }
+      showRoute(route);
+    }
+
+    window.addEventListener('hashchange', resolveRoute);
+    window.addEventListener('DOMContentLoaded', () => {
+      // Dates
+      const now = new Date();
+      const yyyy = now.getFullYear();
+      const fmt = now.toLocaleDateString(undefined, { year: 'numeric', month: 'short', day: 'numeric' });
+      const yearEl = document.getElementById('year');
+      const tEl = document.getElementById('terms-date');
+      const pEl = document.getElementById('privacy-date');
+      if(yearEl) yearEl.textContent = String(yyyy);
+      if(tEl) tEl.textContent = fmt;
+      if(pEl) pEl.textContent = fmt;
+
+      resolveRoute();
+
+      // Mark active link initially
+      setActiveLink(location.hash || "#home");
+    });
+
+    // Contact mailto
+    function sendMail(e){
+      e.preventDefault();
+      const name = document.getElementById('name')?.value?.trim() || "";
+      const email = document.getElementById('email')?.value?.trim() || "";
+      const msg = document.getElementById('msg')?.value?.trim() || "";
+      const subject = encodeURIComponent(`Inquiry from ${name}`);
+      const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\n${msg}`);
+      window.location.href = `mailto:contact@tanishqsingh.in?subject=${subject}&body=${body}`;
+      return false;
+    }
+
+    // PayU Redirects
+    function redirectToPayU(contextNote){
+      // Note: The provided requirement is to redirect to the exact PayU link.
+      // We do not append parameters that might interfere with payment.
+      window.location.href = payuLink;
+    }
+
+    function bookConsultancy(){
+      const amount = document.getElementById('consult-amt')?.value;
+      const date = document.getElementById('consult-date')?.value;
+      if (amount && Number(amount) > 0) {
+        alert(`Proceeding to PayU.\nSelected amount: ₹${amount}${date ? `\nPreferred date: ${date}` : ""}\nYou can confirm the final amount on PayU.`);
+      } else {
+        const ok = confirm("No custom amount entered. You can still proceed and set/confirm the amount on the PayU page. Continue?");
+        if (!ok) return;
+      }
+      window.location.href = payuLink;
+    }
+
+    function customDev(){
+      const amount = document.getElementById('custom-dev-amt')?.value;
+      if (amount && Number(amount) > 0) {
+        alert(`Proceeding to PayU.\nCustom development amount: ₹${amount}\nA proposal may be shared if scope changes.`);
+      } else {
+        const ok = confirm("No amount entered. You can proceed and set/confirm the amount on the PayU page. Continue?");
+        if (!ok) return;
+      }
+      window.location.href = payuLink;
+    }
+
+    function orderSoftware(name, price){
+      alert(`${name}\nPrice: ₹${price}\nYou will be redirected to PayU to complete the purchase.`);
+      window.location.href = payuLink;
+    }
+
+    // Mobile Menu Toggle
+const menuToggle = document.querySelector('.menu-toggle');
+const navMenu = document.querySelector('nav ul');
+
+if (menuToggle && navMenu) {
+  menuToggle.addEventListener('click', () => {
+  navMenu.classList.toggle('active');
+  menuToggle.classList.toggle('active');
+
+  });
+
+  // Auto-close menu on navigation
+  document.querySelectorAll('nav a[data-link]').forEach(link => {
+    link.addEventListener('click', () => navMenu.classList.remove('active'));
+  });
+}
+
+  </script>
+</body>
+</html>
