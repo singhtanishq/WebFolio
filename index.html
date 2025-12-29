@@ -195,14 +195,36 @@
     z-index: -1; 
     }
 
+@media (max-width: 768px) {
+  .glass-header {
+    justify-content: space-between;
+    padding: 0.5rem 1rem;
+  }
+
+  .header-left {
+    position: static;
+  }
+
+  .header-right {
+    gap: 0.5rem;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  .glass-btn img {
+    height: 30px;
+  }
+}
     main {
       flex: 1;
     }
   </style>
+  
 </head>
 <body>
-
-    <video autoplay muted loop playsinline id="bg-video">
+  <video autoplay muted loop playsinline id="bg-video">
   <source src="videos/background.mp4" type="video/mp4">
 </video>
 
@@ -256,7 +278,6 @@
     const typing = document.querySelector('.typing');
     const texts = ['Software Developer'];
     let index = 0, char = 0, isDeleting = false;
-
     function type() {
       const current = texts[index];
       if (!isDeleting && char < current.length) {
@@ -275,7 +296,6 @@
         setTimeout(type, 400);
       }
     }
-
     typing.textContent = '';
     type();
     document.getElementById("year").textContent = new Date().getFullYear();
