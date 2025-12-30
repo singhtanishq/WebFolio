@@ -1,0 +1,763 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Terms of Service - Tanishq Singh</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/terms.png" />
+    <link rel="shortcut icon" href="/assets/images/terms.png" />
+    <link rel="apple-touch-icon" href="/assets/images/terms.png" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #0f172a;
+            --secondary: #334155;
+            --accent: #0066cc;
+            --text-primary: #1e293b;
+            --text-secondary: #475569;
+            --border: #e2e8f0;
+            --bg-light: #f8fafc;
+            --bg-white: #ffffff;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.65;
+            color: var(--text-primary);
+            background-color: var(--bg-white);
+            font-size: 14px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 50px 24px;
+        }
+
+        /* Header Section */
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e293b 100%);
+            color: white;
+            padding: 40px 24px;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        header .container {
+            padding: 0;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+            letter-spacing: -0.3px;
+        }
+
+        .header-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+            margin-bottom: 12px;
+        }
+
+        .last-updated {
+            font-size: 0.8rem;
+            opacity: 0.85;
+            margin-top: 8px;
+        }
+
+        /* Table of Contents */
+        .toc {
+            background-color: var(--bg-light);
+            border: 1px solid var(--border);
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 40px;
+        }
+
+        .toc h3 {
+            font-size: 0.95rem;
+            margin-bottom: 14px;
+            color: var(--primary);
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .toc ul {
+            list-style: none;
+            columns: 2;
+            column-gap: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+            break-inside: avoid;
+        }
+
+        .toc a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.85rem;
+            transition: color 0.2s ease;
+        }
+
+        .toc a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        /* Main Content */
+        main {
+            line-height: 1.7;
+        }
+
+        h2 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            color: var(--primary);
+            margin-top: 30px;
+            margin-bottom: 16px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid var(--border);
+        }
+
+        h2:first-child {
+            margin-top: 0;
+        }
+
+        h3 {
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-top: 18px;
+            margin-bottom: 12px;
+        }
+
+        h4 {
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--secondary);
+            margin-top: 14px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 12px;
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 0.9rem;
+        }
+
+        strong {
+            color: var(--primary);
+            font-weight: 600;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s ease;
+        }
+
+        a:hover {
+            color: var(--primary);
+            text-decoration: underline;
+        }
+
+        /* Lists */
+        ul, ol {
+            margin-bottom: 12px;
+            margin-left: 20px;
+            color: var(--text-secondary);
+        }
+
+        li {
+            margin-bottom: 8px;
+            line-height: 1.65;
+            font-size: 0.9rem;
+        }
+
+        li strong {
+            color: var(--primary);
+        }
+
+        /* Highlight Boxes */
+        .highlight-box {
+            background-color: var(--bg-light);
+            border-left: 4px solid var(--accent);
+            padding: 16px;
+            margin: 16px 0;
+            border-radius: 4px;
+        }
+
+        .highlight-box p {
+            margin-bottom: 0;
+            font-size: 0.9rem;
+        }
+
+        /* Address Block */
+        address {
+            background-color: var(--bg-light);
+            padding: 16px;
+            border-radius: 4px;
+            font-style: normal;
+            margin: 16px 0;
+            line-height: 1.7;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: white;
+            text-align: center;
+            margin-top: 40px;
+            padding: 30px 24px;
+            border-top: 2px solid var(--accent);
+        }
+
+        footer p {
+            margin-bottom: 6px;
+            color: rgba(255, 255, 255, 0.9);
+            font-size: 0.8rem;
+        }
+
+        footer a {
+            color: rgba(255, 255, 255, 0.9);
+        }
+
+        footer a:hover {
+            color: white;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            h2 {
+                font-size: 1.1rem;
+            }
+
+            h3 {
+                font-size: 0.95rem;
+            }
+
+            .toc ul {
+                columns: 1;
+            }
+
+            header {
+                padding: 30px 16px;
+            }
+
+            .container {
+                padding: 30px 16px;
+            }
+
+            body {
+                font-size: 13px;
+            }
+
+            p, li {
+                font-size: 0.85rem;
+            }
+        }
+
+        /* Print Styles */
+        @media print {
+            header {
+                background: white;
+                color: var(--primary);
+                border: none;
+            }
+
+            h1 {
+                color: var(--primary);
+            }
+
+            a {
+                color: var(--accent);
+            }
+
+            .toc {
+                page-break-after: always;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Terms of Service</h1>
+            <p class="header-subtitle">Tanishq Singh (www.tanishqsingh.in)</p>
+            <p class="last-updated">Last Updated: October 18, 2025</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <!-- Table of Contents -->
+        <section class="toc">
+            <h3>Quick Navigation</h3>
+            <ul>
+                <li><a href="#introduction">A. Introduction</a></li>
+                <li><a href="#about">B. About This Website</a></li>
+                <li><a href="#acceptance">C. Acceptance of Terms</a></li>
+                <li><a href="#changes">D. Changes to the Terms</a></li>
+                <li><a href="#definitions">E. Definitions</a></li>
+                <li><a href="#eligibility">F. Eligibility</a></li>
+                <li><a href="#accessibility">G. Accessibility and Availability</a></li>
+                <li><a href="#communication">H. Communication and Contact</a></li>
+                <li><a href="#scope">I. Scope of Services</a></li>
+                <li><a href="#portfolio">J. Portfolio and Website Content</a></li>
+                <li><a href="#responsibilities">K. User Responsibilities and Conduct</a></li>
+                <li><a href="#external-links">L. External Links and Embedded Content</a></li>
+                <li><a href="#feedback">M. Feedback, Testimonials, and Public Comments</a></li>
+                <li><a href="#intellectual-property">N. Intellectual Property Rights</a></li>
+                <li><a href="#license">O. Limited License of Use</a></li>
+                <li><a href="#third-party">P. Use of Client or Third-Party Materials</a></li>
+                <li><a href="#user-contributions">Q. User-Generated Contributions and Submissions</a></li>
+                <li><a href="#dmca">R. DMCA and Copyright Complaints</a></li>
+                <li><a href="#open-source">S. Open-Source and External Code References</a></li>
+                <li><a href="#software">T. Software Demonstrations or Downloads</a></li>
+                <li><a href="#disclaimer">U. Disclaimer of Warranties</a></li>
+                <li><a href="#limitation">V. Limitation of Liability</a></li>
+                <li><a href="#indemnification">W. Indemnification</a></li>
+                <li><a href="#third-party-services">X. External Links and Third-Party Services</a></li>
+                <li><a href="#risk">Y. Risk and Security Disclaimer</a></li>
+                <li><a href="#professional-advice">Z. No Professional Advice Disclaimer</a></li>
+                <li><a href="#force-majeure">AA. Force Majeure</a></li>
+                <li><a href="#termination">AB. Termination of Access</a></li>
+                <li><a href="#governing-law">AC. Governing Law and Jurisdiction</a></li>
+                <li><a href="#dispute">AD. Dispute Resolution and Arbitration</a></li>
+                <li><a href="#amendments">AE. Amendments and Updates to These Terms</a></li>
+                <li><a href="#assignment">AF. Assignment</a></li>
+                <li><a href="#severability">AG. Severability</a></li>
+                <li><a href="#entire-agreement">AH. Entire Agreement</a></li>
+                <li><a href="#waiver">AI. Waiver</a></li>
+                <li><a href="#notices">AJ. Notices and Communication</a></li>
+                <li><a href="#contact">AK. Contact and Support</a></li>
+                <li><a href="#effective-date">AL. Effective Date</a></li>
+            </ul>
+        </section>
+
+        <!-- Main Content -->
+        <main>
+            <section id="introduction">
+                <h2>A. Introduction</h2>
+                <p>Welcome to the official website of <strong>Tanishq Singh</strong> (<a href="https://www.tanishqsingh.in">www.tanishqsingh.in</a>). This Terms of Service ("Terms", "Agreement") governs your access to and use of this website, including all related content, communications, and services offered herein. By using, browsing, or accessing any portion of the website, you agree to comply with these Terms in full.</p>
+                <p>If you do not agree to these Terms, please refrain from accessing or using the site or any of its related services. Continued use of this website constitutes your acceptance of these Terms and any updates made to them over time.</p>
+                <p>These Terms are designed to establish clear guidelines for acceptable use, clarify rights and responsibilities between you (the "User") and the website owner ("Tanishq Singh"), and ensure a professional, transparent, and lawful digital environment.</p>
+            </section>
+
+            <section id="about">
+                <h2>B. About This Website</h2>
+                <p>This website serves two primary purposes:</p>
+                <ul>
+                    <li><strong>Personal Portfolio:</strong> To display and present the professional background, work samples, achievements, creative projects, and related content produced by or associated with Tanishq Singh.</li>
+                    <li><strong>Service Platform:</strong> To provide information about professional services offered by Tanishq Singh, such as development, consulting, content creation, or other professional expertise. It may also include communication tools like contact forms for potential collaborations, inquiries, or partnerships.</li>
+                </ul>
+                <p>The site is operated and maintained by Tanishq Singh, based in Varanasi, Uttar Pradesh, India, and may utilize third-party service providers for hosting, analytics, and communication functionalities.</p>
+            </section>
+
+            <section id="acceptance">
+                <h2>C. Acceptance of Terms</h2>
+                <p>By visiting or interacting with this website, you acknowledge that you have read, understood, and agreed to be legally bound by these Terms and all applicable laws and regulations. This Agreement applies to all users of the website, including but not limited to casual visitors, potential clients, collaborators, and partners.</p>
+                <p>These Terms form a binding contract between you and Tanishq Singh. If you are using this site on behalf of an organization, you represent and warrant that you are authorized to bind that organization to these Terms.</p>
+            </section>
+
+            <section id="changes">
+                <h2>D. Changes to the Terms</h2>
+                <p>Tanishq Singh reserves the right to modify, amend, or update these Terms of Service at any time, with or without prior notice. Updates become effective immediately upon publication on this page unless otherwise stated. The "Last Updated" date at the top reflects the most recent revision.</p>
+                <p>It is your responsibility to review these Terms periodically. Continued use of the website after changes are posted constitutes acceptance of the revised Terms.</p>
+            </section>
+
+            <section id="definitions">
+                <h2>E. Definitions</h2>
+                <ul>
+                    <li><strong>"Website"</strong> refers to the online platform <a href="https://www.tanishqsingh.in">www.tanishqsingh.in</a> and all associated pages, domains, and subdomains.</li>
+                    <li><strong>"User," "You," or "Your"</strong> means any individual or entity who accesses, views, interacts with, or uses the website in any capacity.</li>
+                    <li><strong>"Services"</strong> means any professional offerings, consultancy, or communications facilitated by or through the website.</li>
+                    <li><strong>"Content"</strong> means all text, images, code, graphics, logos, trademarks, articles, videos, documents, and other materials available on the site.</li>
+                    <li><strong>"We," "Us," or "Our"</strong> refers to Tanishq Singh and any authorized agents, representatives, or service providers involved in the operation of this website.</li>
+                </ul>
+            </section>
+
+            <section id="eligibility">
+                <h2>F. Eligibility</h2>
+                <p>This website is intended for use by individuals who are at least 18 years of age or the legal age of majority in their jurisdiction. By using this website, you represent and warrant that you are legally capable of entering into a binding contract.</p>
+                <p>If you are accessing this website on behalf of a company or other legal entity, you affirm that you have the authority to bind that entity to these Terms. If you do not meet these requirements, you must not use this site.</p>
+            </section>
+
+            <section id="accessibility">
+                <h2>G. Accessibility and Availability</h2>
+                <p>We strive to ensure the website is accessible and operational at all times. However, due to maintenance, server issues, or technical disruptions, access may be temporarily unavailable. We reserve the right to modify, suspend, or discontinue parts of the website at any time without notice.</p>
+                <p>We are not liable for any loss or damage resulting from unavailability, downtime, or inaccessibility of the website.</p>
+            </section>
+
+            <section id="communication">
+                <h2>H. Communication and Contact</h2>
+                <p>By submitting information through the website (e.g., via contact forms), you consent to receive communications from us electronically. All official correspondence shall be made through the following contact details:</p>
+                <address>
+                    <strong>Email:</strong> <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a><br>
+                    <strong>Address:</strong> Sa 6/186 NL1, Sri Nagar Colony, Pahariya, Varanasi, UP - 221007, India
+                </address>
+                <p>We aim to respond to all legitimate communications within a reasonable timeframe. Please avoid submitting confidential or proprietary information unless explicitly requested.</p>
+            </section>
+
+            <section id="scope">
+                <h2>I. Scope of Services</h2>
+                <p>The website <strong>www.tanishqsingh.in</strong> is primarily operated as a personal and professional portfolio platform managed by <strong>Tanishq Singh</strong>. The site is intended to:</p>
+                <ul>
+                    <li>Showcase creative, technical, and professional work completed by Tanishq Singh, including but not limited to design projects, development portfolios, writings, or case studies.</li>
+                    <li>Provide background information, experience, skills, and achievements to potential clients, collaborators, or employers.</li>
+                    <li>Enable visitors to initiate communication for inquiries, collaborations, consulting, freelance projects, or other professional engagements.</li>
+                </ul>
+                <p>The website does not function as a commercial marketplace or automated service portal. All services are provided manually, on a case-by-case basis, following direct communication through official channels (such as email or contact forms).</p>
+
+                <h3>1. Informational Nature</h3>
+                <p>The website's primary purpose is informational. While it describes potential services or professional capabilities, it does not constitute a legally binding offer, contract, or guarantee of availability. All service engagements are subject to mutual discussion, written agreement, and confirmation between you and Tanishq Singh.</p>
+
+                <h3>2. Communication and Engagement Process</h3>
+                <p>If you wish to engage in professional collaboration, you may reach out using the provided contact methods. Upon receiving your inquiry, Tanishq Singh may request additional information, project details, timelines, or objectives. Any agreement, quotation, or proposal shared via email or written correspondence shall take precedence over the general descriptions listed on the website.</p>
+
+                <h3>3. Third-Party Tools and Integrations</h3>
+                <p>The website may use third-party services such as Google Analytics, GitHub, LinkedIn embeds, or email automation tools to improve performance, communication, and analytics. While these integrations enhance functionality, your interaction with such services is governed by their respective terms and privacy policies.</p>
+
+                <h3>4. No Automatic Client Relationship</h3>
+                <p>Contacting Tanishq Singh through the website or submitting an inquiry does not automatically establish a client relationship. A formal engagement occurs only after written confirmation, mutual acceptance of scope, and where applicable, signed documentation or digital acceptance of a proposal.</p>
+            </section>
+
+            <section id="portfolio">
+                <h2>J. Portfolio and Website Content</h2>
+                <p>All portfolio materials displayed on <strong>www.tanishqsingh.in</strong>, including but not limited to project showcases, designs, case studies, articles, and related intellectual works, are original creations or authorized displays owned or licensed by Tanishq Singh.</p>
+
+                <h3>1. Content Ownership</h3>
+                <p>All content featured on the website remains the sole intellectual property of Tanishq Singh, unless otherwise stated. Unauthorized reproduction, duplication, public display, or commercial exploitation of any content is strictly prohibited.</p>
+
+                <h3>2. Use of Work Samples</h3>
+                <p>Project examples and case studies may include collaborative or client-based work. In such cases, proper credit is attributed, and display permissions are managed under agreed terms. If any client or entity featured in the portfolio wishes to have their materials removed or updated, they may contact us directly at <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a>.</p>
+
+                <h3>3. Accuracy of Information</h3>
+                <p>While every effort is made to maintain the accuracy, relevance, and currency of the information presented, the content may occasionally include typographical errors, outdated references, or unintentional inaccuracies. The website content is provided "as-is" and does not imply any form of warranty or representation regarding completeness or fitness for a particular purpose.</p>
+
+                <h3>4. Third-Party References</h3>
+                <p>Some sections may reference external companies, platforms, or products. Such mentions are purely for informational or illustrative purposes and do not imply affiliation, endorsement, or sponsorship.</p>
+            </section>
+
+            <section id="responsibilities">
+                <h2>K. User Responsibilities and Conduct</h2>
+                <p>By accessing or using this website, you agree to adhere to the following principles of responsible and lawful conduct. You must not use this site in a way that violates applicable laws, infringes on others' rights, or compromises system security and functionality.</p>
+
+                <h3>1. Acceptable Use</h3>
+                <ul>
+                    <li>You may browse, view, and share website content for informational or non-commercial purposes, provided you give proper attribution to <strong>Tanishq Singh</strong> and do not modify, misrepresent, or claim authorship of any materials.</li>
+                    <li>You may contact Tanishq Singh through official forms or email for legitimate professional inquiries, collaborations, or project discussions.</li>
+                    <li>You must ensure any data or materials you submit (e.g., through a contact form) are accurate, lawful, and free of malicious code or content.</li>
+                </ul>
+
+                <h3>2. Prohibited Activities</h3>
+                <p>You agree <strong>not</strong> to engage in any of the following activities while using the website:</p>
+                <ul>
+                    <li>Attempting to gain unauthorized access to the server, database, or underlying systems that host the website.</li>
+                    <li>Distributing spam, phishing links, malware, or other harmful software through the website's forms or linked communication channels.</li>
+                    <li>Scraping, copying, or mass-downloading content using automated systems, bots, crawlers, or similar technologies without written permission.</li>
+                    <li>Impersonating any individual or entity, including Tanishq Singh, in communications or public posts derived from this website.</li>
+                    <li>Using the website for defamatory, fraudulent, or illegal purposes, including violations of intellectual property or data protection laws.</li>
+                </ul>
+
+                <h3>3. User-Submitted Content</h3>
+                <p>Any materials, data, or messages you voluntarily submit via the website (including feedback or contact forms) remain your responsibility. You grant Tanishq Singh a limited, non-exclusive right to use such information solely for the purpose of responding to your request or maintaining correspondence.</p>
+                <p>You must not submit confidential or proprietary data unless explicitly requested or covered under a separate written agreement. Sensitive business information should only be shared after establishing a secure communication channel or NDA if applicable.</p>
+
+                <h3>4. Data Accuracy and Representation</h3>
+                <p>When providing information (e.g., in contact or inquiry forms), you agree that all details provided are accurate, current, and complete. Misrepresentation, impersonation, or submission of false information may result in communication termination and, if necessary, legal action.</p>
+            </section>
+
+            <section id="external-links">
+                <h2>L. External Links and Embedded Content</h2>
+                <p>The website may contain links to third-party platforms such as LinkedIn, Instagram, GitHub, or other personal/professional networks. These links are provided for convenience and reference only. Visiting external links is done at your own risk, and their content is governed by their respective terms of service and privacy policies.</p>
+                <p>Embedded content (e.g., social media feeds, videos, or code snippets) may behave similarly to if you visited the third-party site directly. Such third-party services may collect data, use cookies, or track user interactions independently of this website.</p>
+            </section>
+
+            <section id="feedback">
+                <h2>M. Feedback, Testimonials, and Public Comments</h2>
+                <p>From time to time, users may submit testimonials, comments, or reviews voluntarily. By doing so, you grant Tanishq Singh the right to publish or display such comments (with or without attribution) for promotional or informational use unless otherwise agreed in writing.</p>
+                <p>All feedback must be honest, factual, and respectful. False or defamatory statements are strictly prohibited and may result in removal or legal recourse.</p>
+            </section>
+
+            <section id="intellectual-property">
+                <h2>N. Intellectual Property Rights</h2>
+                <p>All materials available on <strong>www.tanishqsingh.in</strong>, including but not limited to written content, design layouts, source code, project showcases, images, illustrations, logos, icons, videos, animations, downloadable files, and other media, are the exclusive intellectual property of <strong>Tanishq Singh</strong> or used under proper authorization from their respective owners.</p>
+                <p>These materials are protected by applicable copyright, trademark, and intellectual property laws of India and international jurisdictions, including the Berne Convention and other global treaties.</p>
+
+                <h3>1. Copyright Ownership</h3>
+                <p>All original works produced by or for <strong>Tanishq Singh</strong> — including text, designs, code, and creative outputs — are protected under copyright law. Any unauthorized copying, reproduction, or distribution of such works constitutes a violation of intellectual property rights.</p>
+                <p>Where a third party's trademarks or copyrighted materials appear (e.g., in client work examples), they are displayed for portfolio or commentary purposes only and remain the property of their respective owners.</p>
+
+                <h3>2. Trademarks and Branding</h3>
+                <p>All branding elements such as the name "Tanishq Singh," associated logos, design marks, and other brand identifiers used on the website are trademarks or service marks owned by or licensed to Tanishq Singh. Unauthorized use of these elements for promotional or commercial purposes without written permission is strictly prohibited.</p>
+
+                <h3>3. Moral Rights</h3>
+                <p>Tanishq Singh retains moral rights in all original works, including the right of attribution and the right to protect the integrity of the work against distortion, mutilation, or misrepresentation.</p>
+
+                <h3>4. No Transfer of Ownership</h3>
+                <p>Use of this website does not grant users any ownership or intellectual property rights in the content or services provided. Access is permitted solely for personal and non-commercial purposes under these Terms.</p>
+            </section>
+
+            <section id="license">
+                <h2>O. Limited License of Use</h2>
+                <p>Subject to your continued compliance with these Terms, Tanishq Singh grants you a limited, non-exclusive, non-transferable, and revocable license to:</p>
+                <ul>
+                    <li>Access and view the website and its publicly available pages solely for informational or personal reference purposes.</li>
+                    <li>Share links to the website or publicly available portfolio pages for professional or non-commercial use, provided proper credit is given to <strong>Tanishq Singh</strong>.</li>
+                    <li>Download or temporarily cache website materials in your browser for normal viewing purposes only.</li>
+                </ul>
+
+                <h3>1. License Restrictions</h3>
+                <p>This license expressly prohibits any of the following activities unless you have received explicit written permission from Tanishq Singh:</p>
+                <ul>
+                    <li>Republishing, redistributing, or commercially exploiting website content or code.</li>
+                    <li>Modifying, adapting, or reverse-engineering the website or any of its design elements.</li>
+                    <li>Using the website's content to imply endorsement, partnership, or collaboration without prior authorization.</li>
+                    <li>Removing copyright notices, branding elements, or attribution references from any materials.</li>
+                    <li>Creating derivative works or reproducing content for training AI models or data scraping purposes.</li>
+                </ul>
+
+                <h3>2. Duration of License</h3>
+                <p>The above license remains valid so long as you comply with all conditions outlined in this document. Any breach of these Terms automatically terminates the license without notice and may result in legal enforcement or civil liability.</p>
+            </section>
+
+            <section id="third-party">
+                <h2>P. Use of Client or Third-Party Materials</h2>
+                <p>Portfolio items may include collaborative or client projects. In such cases, any copyrighted materials from clients or employers are used strictly within the scope of contractual permissions or fair use principles (e.g., for demonstration, education, or professional representation).</p>
+
+                <h3>1. Fair Display of Work</h3>
+                <p>Tanishq Singh takes care to present portfolio projects respectfully and factually, ensuring that any third-party material is not misused, misrepresented, or taken out of context. If you are a client or partner featured in the portfolio and wish to request content modification or removal, please reach out to <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a>.</p>
+
+                <h3>2. Attribution and Collaboration Credits</h3>
+                <p>Where appropriate, project pages or case studies may acknowledge contributions from collaborators, companies, or co-developers. These credits are added in good faith and can be updated or removed upon reasonable request.</p>
+            </section>
+
+            <section id="user-contributions">
+                <h2>Q. User-Generated Contributions and Submissions</h2>
+                <p>From time to time, users or visitors may voluntarily submit messages, suggestions, ideas, or comments through the website's contact forms or related communication channels. By submitting such material, you agree to the following:</p>
+                <ul>
+                    <li>You represent and warrant that your submissions are your original work and do not infringe any third-party rights.</li>
+                    <li>You grant Tanishq Singh a non-exclusive, royalty-free, worldwide license to use, reproduce, display, and adapt the content solely for communication and service-related purposes.</li>
+                    <li>You waive any claims to compensation or attribution unless otherwise agreed in writing.</li>
+                </ul>
+                <p>Tanishq Singh is under no obligation to review, retain, or respond to every submission. However, reasonable efforts will be made to handle all legitimate inquiries professionally and confidentially.</p>
+            </section>
+
+            <section id="dmca">
+                <h2>R. DMCA and Copyright Complaints</h2>
+                <p>If you believe that any material on the website infringes upon your copyright, please notify Tanishq Singh using the contact details below. Include a written statement containing:</p>
+                <ul>
+                    <li>Your full name, organization (if applicable), and contact information.</li>
+                    <li>Identification of the copyrighted work you believe has been infringed.</li>
+                    <li>Specific URLs or locations of the allegedly infringing material.</li>
+                    <li>A statement declaring that you have a good-faith belief that the use is unauthorized.</li>
+                    <li>Your physical or digital signature confirming the accuracy of your claim.</li>
+                </ul>
+                <p>Upon verification, the disputed content may be reviewed, suspended, or removed as appropriate. False claims or misuse of the copyright reporting process may result in legal consequences under applicable law.</p>
+            </section>
+
+            <section id="open-source">
+                <h2>S. Open-Source and External Code References</h2>
+                <p>Some portfolio projects showcased on <strong>www.tanishqsingh.in</strong> may utilize open-source frameworks, libraries, or public code samples (e.g., React, TailwindCSS, Node.js). All such third-party tools are credited under their respective open-source licenses. Nothing on this website shall be interpreted as altering, superseding, or re-licensing third-party intellectual property.</p>
+            </section>
+
+            <section id="software">
+                <h2>T. Software Demonstrations or Downloads (if applicable)</h2>
+                <p>Occasionally, the website may host or link to demo versions of digital tools, design prototypes, or applications developed by Tanishq Singh. Such files are provided strictly for testing, demonstration, or educational purposes and may not be redistributed, modified, or sold.</p>
+                <p>By downloading or interacting with any such files, you agree to use them "as-is" without any warranties, and solely for lawful, non-commercial evaluation. Unauthorized re-uploading or distribution is strictly prohibited.</p>
+            </section>
+
+            <section id="disclaimer">
+                <h2>U. Disclaimer of Warranties</h2>
+                <p>The website <strong>www.tanishqsingh.in</strong> and all related materials, content, and services are provided on an "as is" and "as available" basis without any warranties of any kind, express or implied. By accessing this site, you acknowledge that:</p>
+                <ul>
+                    <li>No guarantee is made regarding the accuracy, completeness, or reliability of any content, information, or resources available on the site.</li>
+                    <li>Tanishq Singh does not represent or warrant that the website will always operate uninterrupted, error-free, secure, or free of harmful components (such as viruses, malware, or technical issues).</li>
+                    <li>Any reliance on materials or data obtained through this website is at your own risk.</li>
+                    <li>Tanishq Singh disclaims all warranties, including but not limited to implied warranties of merchantability, fitness for a particular purpose, and non-infringement.</li>
+                </ul>
+                <p>While all reasonable precautions are taken to ensure accuracy and security, <strong>Tanishq Singh</strong> makes no promise or representation regarding future updates, availability, or continued operation of the site or any linked resources.</p>
+            </section>
+
+            <section id="limitation">
+                <h2>V. Limitation of Liability</h2>
+                <p>To the fullest extent permitted by law, <strong>Tanishq Singh</strong>, including his associates, affiliates, contributors, or licensors, shall not be held liable for any direct, indirect, incidental, consequential, exemplary, or punitive damages arising from your use of or inability to use this website, its content, or related services.</p>
+
+                <h3>1. Examples of Excluded Damages</h3>
+                <ul>
+                    <li>Loss of data, income, profits, or goodwill.</li>
+                    <li>Business interruption or delay.</li>
+                    <li>Unauthorized access to or alteration of data transmissions.</li>
+                    <li>Inaccuracy, corruption, or deletion of user-submitted information.</li>
+                    <li>Any other matter relating to the use or misuse of this website.</li>
+                </ul>
+
+                <h3>2. Maximum Liability</h3>
+                <p>If any jurisdiction does not allow the exclusion or limitation of certain damages, then the total liability of <strong>Tanishq Singh</strong> for any claim arising under these Terms shall not exceed INR ₹10,000 (Indian Rupees Ten Thousand only) or the equivalent amount in local currency, whichever is less.</p>
+            </section>
+
+            <section id="indemnification">
+                <h2>W. Indemnification</h2>
+                <p>By using this website, you agree to indemnify, defend, and hold harmless <strong>Tanishq Singh</strong>, his agents, employees, partners, and affiliates from and against any and all claims, damages, obligations, losses, liabilities, costs, or expenses (including reasonable attorney fees) arising from:</p>
+                <ul>
+                    <li>Your violation of these Terms of Service or any applicable law or regulation.</li>
+                    <li>Your use or misuse of website content, materials, or linked resources.</li>
+                    <li>Your infringement of any intellectual property or privacy rights of a third party.</li>
+                    <li>Any content or materials you submit, upload, or transmit through the site.</li>
+                </ul>
+                <p>Tanishq Singh reserves the right to assume exclusive defense and control of any matter subject to indemnification by you. In such cases, you agree to cooperate fully with all reasonable defense efforts.</p>
+            </section>
+
+            <section id="third-party-services">
+                <h2>X. External Links and Third-Party Services</h2>
+                <p>The website may contain links to third-party platforms, tools, APIs, or websites (collectively "Third-Party Services") for convenience or reference. These may include, but are not limited to:</p>
+                <ul>
+                    <li>External social media platforms (LinkedIn, Instagram, GitHub, YouTube, etc.)</li>
+                    <li>Service providers (Google Analytics, Mailchimp, Cloudflare, etc.)</li>
+                    <li>Partner portfolios or client websites</li>
+                </ul>
+
+                <h3>1. Disclaimer for External Links</h3>
+                <p>All external links are provided solely for informational purposes. <strong>Tanishq Singh</strong> does not endorse, control, or assume responsibility for any third-party websites, their content, policies, or practices. Visiting such links is entirely at your own discretion and risk.</p>
+
+                <h3>2. Data Exchange with Third Parties</h3>
+                <p>When accessing linked services, your data may be subject to different privacy practices and terms. You are encouraged to review the respective Terms and Privacy Policies of any third-party sites before engaging with them.</p>
+            </section>
+
+            <section id="risk">
+                <h2>Y. Risk and Security Disclaimer</h2>
+                <p>Although this website uses modern security practices (such as HTTPS encryption, firewalls, and malware monitoring), users acknowledge and agree that:</p>
+                <ul>
+                    <li>No online system is entirely immune to security breaches or unauthorized access.</li>
+                    <li>Any transmission of data across the Internet carries inherent risks.</li>
+                    <li>Tanishq Singh shall not be liable for loss or damage resulting from data interception, unauthorized access, or system compromise.</li>
+                </ul>
+                <p>Users are responsible for maintaining adequate cybersecurity hygiene, such as using updated browsers, strong passwords, and antivirus protection when interacting with online resources.</p>
+            </section>
+
+            <section id="professional-advice">
+                <h2>Z. No Professional Advice Disclaimer</h2>
+                <p>All content on <strong>www.tanishqsingh.in</strong> is intended solely for informational and illustrative purposes. Nothing on this website constitutes professional, financial, technical, or legal advice. Visitors are encouraged to seek appropriate professional guidance before relying on any information contained herein.</p>
+
+                <h3>1. Portfolio Demonstrations</h3>
+                <p>Any case studies, technical examples, or design showcases are illustrative representations and should not be construed as guarantees of specific outcomes or results for future clients or collaborations.</p>
+
+                <h3>2. Project Availability</h3>
+                <p>The display of any service or project on the website does not guarantee that such service will be available for engagement at all times. Tanishq Singh reserves the right to modify, discontinue, or refuse specific services at his discretion.</p>
+            </section>
+
+            <section id="force-majeure">
+                <h2>AA. Force Majeure</h2>
+                <p><strong>Tanishq Singh</strong> shall not be liable or deemed in breach of these Terms for any failure or delay in performance arising from circumstances beyond reasonable control, including but not limited to natural disasters, network outages, pandemics, government actions, or labor disputes. Obligations affected by such events shall be suspended during their duration.</p>
+            </section>
+
+            <section id="termination">
+                <h2>AB. Termination of Access</h2>
+                <p>Tanishq Singh reserves the right, at his sole discretion, to suspend or terminate your access to <strong>www.tanishqsingh.in</strong> at any time, without prior notice, if it is believed that you have violated these Terms of Service or applicable laws. Grounds for termination may include but are not limited to:</p>
+                <ul>
+                    <li>Attempting to interfere with the website's technical operations or security.</li>
+                    <li>Using the website for unlawful, harmful, or abusive activities.</li>
+                    <li>Engaging in data scraping, spamming, or malicious software dissemination.</li>
+                    <li>Providing false information or impersonating another person.</li>
+                </ul>
+                <p>Upon termination, your license to use or access any website materials shall immediately cease, and you must destroy all copies of any downloaded or cached content in your possession.</p>
+            </section>
+
+            <section id="governing-law">
+                <h2>AC. Governing Law and Jurisdiction</h2>
+                <p>These Terms of Service shall be governed by and construed in accordance with the laws of the <strong>Republic of India</strong>, without regard to conflict of law principles. Any dispute arising under or relating to these Terms shall be subject exclusively to the jurisdiction of the competent courts located in <strong>Varanasi, Uttar Pradesh, India</strong>.</p>
+                <p>Users accessing this website from outside India are responsible for compliance with local laws applicable to their region.</p>
+            </section>
+
+            <section id="dispute">
+                <h2>AD. Dispute Resolution and Arbitration</h2>
+                <p>In the event of a dispute, claim, or controversy arising out of or relating to your use of the website, the parties shall first attempt to resolve the matter amicably through direct written communication within <strong>30 (thirty) days</strong> of notice.</p>
+
+                <h3>1. Mediation and Arbitration</h3>
+                <p>If the dispute cannot be resolved through informal negotiation, it shall be referred to arbitration in accordance with the provisions of the <strong>Arbitration and Conciliation Act, 1996</strong> (as amended). The arbitration shall be conducted by a single arbitrator appointed mutually by both parties, and the proceedings shall take place in <strong>Varanasi, Uttar Pradesh</strong>. The language of arbitration shall be <strong>English</strong>.</p>
+
+                <h3>2. Costs and Decisions</h3>
+                <p>Each party shall bear its own costs of arbitration unless otherwise determined by the arbitrator in the final award. The arbitrator's decision shall be final and binding on both parties.</p>
+
+                <h3>3. Injunctive Relief</h3>
+                <p>Notwithstanding the above, Tanishq Singh reserves the right to seek injunctive or equitable relief before any court of competent jurisdiction in cases involving intellectual property infringement or unauthorized use of confidential materials.</p>
+            </section>
+
+            <section id="amendments">
+                <h2>AE. Amendments and Updates to These Terms</h2>
+                <p>Tanishq Singh reserves the right to revise, modify, or update these Terms of Service at any time without prior notice. Updates will be posted publicly with a revised "Last Updated" date at the top of the document.</p>
+                <p>It is your responsibility to review the Terms periodically. Continued use of the website after such modifications constitutes your acceptance of the updated Terms.</p>
+            </section>
+
+            <section id="assignment">
+                <h2>AF. Assignment</h2>
+                <p>Tanishq Singh may assign or transfer his rights and obligations under these Terms to any successor, affiliate, or business partner in connection with a merger, acquisition, restructuring, or sale of assets. Users may not assign their rights or obligations under these Terms without prior written consent.</p>
+            </section>
+
+            <section id="severability">
+                <h2>AG. Severability</h2>
+                <p>If any provision of these Terms is found to be unlawful, void, or unenforceable under applicable law, such provision shall be deemed severable and shall not affect the validity or enforceability of the remaining provisions.</p>
+            </section>
+
+            <section id="entire-agreement">
+                <h2>AH. Entire Agreement</h2>
+                <p>These Terms of Service, together with the <a href="https://www.tanishqsingh.in/privacy">Privacy Policy</a>, constitute the entire agreement between you and <strong>Tanishq Singh</strong> regarding your use of this website. They supersede all prior or contemporaneous communications, representations, or understandings between the parties, whether oral or written.</p>
+            </section>
+
+            <section id="waiver">
+                <h2>AI. Waiver</h2>
+                <p>No failure or delay by Tanishq Singh in exercising any right, power, or remedy under these Terms shall operate as a waiver thereof. Any waiver must be expressly made in writing and signed to be effective.</p>
+            </section>
+
+            <section id="notices">
+                <h2>AJ. Notices and Communication</h2>
+                <p>All official notices, requests, or communications under these Terms should be directed to:</p>
+                <address>
+                    <strong>Tanishq Singh</strong><br>
+                    Sa 6/186 NL1, Sri Nagar Colony, Pahariya,<br>
+                    Varanasi, Uttar Pradesh - 221007, India<br>
+                    Email: <a href="mailto:contact@tanishqsingh.in">contact@tanishqsingh.in</a>
+                </address>
+            </section>
+
+            <section id="contact">
+                <h2>AK. Contact and Support</h2>
+                <p>If you have questions about these Terms, your rights, or the use of your information, please contact via the provided email addresses. All inquiries will be acknowledged within a reasonable timeframe in accordance with applicable law.</p>
+            </section>
+
+            <section id="effective-date">
+                <h2>AL. Effective Date</h2>
+                <p>These Terms of Service were last updated on <strong>October 18, 2025</strong> and are effective immediately for all visitors and users of <strong>www.tanishqsingh.in</strong>.</p>
+            </section>
+        </main>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Tanishq Singh. All rights reserved. | <a href="https://www.tanishqsingh.in">www.tanishqsingh.in</a></p>
+            <p>Unauthorized reproduction or redistribution of content from this website is prohibited.</p>
+        </div>
+    </footer>
+</body>
+</html>

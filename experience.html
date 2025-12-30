@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Experience - Tanishq Singh">
+    <title>Experience - Tanishq Singh</title>
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect fill='%2366ccff' width='100' height='100'/><text x='50' y='65' font-size='60' font-weight='bold' text-anchor='middle' fill='white'>TS</text></svg>">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header/Navigation -->
+    <header class="header sticky-header">
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">
+                        <img src="assets/images/logo.png" alt="Tanishq Singh Logo" class="logo-img">
+                    </div>
+                    <span class="logo-text">Tanishq Singh</span>
+                </a>
+
+                <div class="nav-menu desktop-nav">
+                    <a href="index.html" class="nav-link">Home</a>
+                    
+                    <div class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle">
+                            About
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="about.html#bio" class="dropdown-item">About me</a>
+                            <a href="about.html#coding" class="dropdown-item">Coding Profile</a>
+                            <a href="about.html#download" class="dropdown-item">Download CV</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle active">
+                            Experience
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="#work" class="dropdown-item">Work Experience</a>
+                            <a href="#education" class="dropdown-item">Education</a>
+                            <a href="#certifications" class="dropdown-item">Certifications</a>
+                            <a href="#achievements" class="dropdown-item">Achievements</a>
+                            <a href="#skills" class="dropdown-item">Skills</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle">
+                            Projects
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="projects.html#personal" class="dropdown-item">Personal Projects</a>
+                            <a href="projects.html#research" class="dropdown-item">Research Works</a>
+                            <a href="projects.html#opensource" class="dropdown-item">Open Source</a>
+                        </div>
+                    </div>
+
+                    <div class="nav-item dropdown">
+                        <button class="nav-link dropdown-toggle">
+                            Services
+                            <svg class="chevron" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <polyline points="6 9 12 15 18 9"></polyline>
+                            </svg>
+                        </button>
+                        <div class="dropdown-menu">
+                            <a href="services.html#products" class="dropdown-item">Products</a>
+                            <a href="services.html#consultancy" class="dropdown-item">Consultancy</a>
+                            <a href="services.html#more" class="dropdown-item">More</a>
+                        </div>
+                    </div>
+
+                    <a href="contact.html" class="nav-link">Contact Me</a>
+                </div>
+
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+
+            <div class="mobile-nav" id="mobileNav">
+                <a href="index.html" class="mobile-nav-link">Home</a>
+                
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-toggle">About</button>
+                    <div class="mobile-dropdown">
+                        <a href="about.html#bio" class="mobile-dropdown-item">About me</a>
+                        <a href="about.html#coding" class="mobile-dropdown-item">Coding Profile</a>
+                        <a href="about.html#download" class="mobile-dropdown-item">Download CV</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-toggle">Experience</button>
+                    <div class="mobile-dropdown active">
+                        <a href="#work" class="mobile-dropdown-item">Work Experience</a>
+                        <a href="#education" class="mobile-dropdown-item">Education</a>
+                        <a href="#certifications" class="mobile-dropdown-item">Certifications</a>
+                        <a href="#achievements" class="mobile-dropdown-item">Achievements</a>
+                        <a href="#skills" class="mobile-dropdown-item">Skills</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-toggle">Projects</button>
+                    <div class="mobile-dropdown">
+                        <a href="projects.html#personal" class="mobile-dropdown-item">Personal Projects</a>
+                        <a href="projects.html#research" class="mobile-dropdown-item">Research Works</a>
+                        <a href="projects.html#opensource" class="mobile-dropdown-item">Open Source</a>
+                    </div>
+                </div>
+
+                <div class="mobile-nav-item">
+                    <button class="mobile-nav-toggle">Services</button>
+                    <div class="mobile-dropdown">
+                        <a href="services.html#products" class="mobile-dropdown-item">Products</a>
+                        <a href="services.html#consultancy" class="mobile-dropdown-item">Consultancy</a>
+                        <a href="services.html#more" class="mobile-dropdown-item">More</a>
+                    </div>
+                </div>
+
+                <a href="contact.html" class="mobile-nav-link">Contact Me</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="animated-bg">
+            <div class="gradient-blob blob-1"></div>
+            <div class="gradient-blob blob-2"></div>
+        </div>
+
+        <!-- Work Experience Section -->
+        <section id="work" class="experience-section">
+            <div class="container">
+                <h1 class="section-title">Work Experience</h1>
+                <div class="timeline">
+                    <!-- Software Developer at FireShark -->
+                    <div class="timeline-item observe">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Developer</h3>
+                                <span class="timeline-period">Oct 2025 - Present</span>
+                            </div>
+                            <p class="timeline-company">FireShark · Full-time · Remote</p>
+                            <p class="timeline-description">Designing, developing, and maintaining secure front-end and back-end applications. Leading website development projects and ensuring continuous maintenance, updates, and security hardening. Designing and enhancing the UI/UX for our website, ensuring user-friendly navigation, accessibility, and a professional look aligned with our brand. Managing and optimizing databases, including backups, monitoring, and access control management. Building and integrating APIs with strict security and compliance standards. Implementing authentication, authorization, and encryption mechanisms across all systems. Collaborating with the cybersecurity team to ensure all websites, applications, and databases are compliant with industry best practices.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Full-Stack</span>
+                                <span class="tag">Security</span>
+                                <span class="tag">UI/UX</span>
+                                <span class="tag">Database</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Software Developer at HexaFusion -->
+                    <div class="timeline-item observe">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Software Developer</h3>
+                                <span class="timeline-period">Dec 2024 - Sep 2025</span>
+                            </div>
+                            <p class="timeline-company">HexaFusion Technologies · Full-time · Bengaluru, Hybrid</p>
+                            <p class="timeline-description">Developed and maintained scalable web applications using React.js, Redux.js, Node.js, and Express.js. Implemented responsive designs and optimized performance across multiple platforms. Worked with MongoDB and MySQL databases, ensuring data integrity and efficient query optimization. Collaborated with cross-functional teams to design and deploy scalable web solutions. Participated in code reviews and followed industry best practices in software development.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">React.js</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- SDE Intern -->
+                    <div class="timeline-item observe">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>SDE Intern</h3>
+                                <span class="timeline-period">Jun 2024 - Nov 2024</span>
+                            </div>
+                            <p class="timeline-company">HexaFusion Technologies · Internship</p>
+                            <p class="timeline-description">Developed and maintained web applications using ReactJS, NodeJS, and MongoDB, ensuring they are efficient and responsive. Created and implemented automation testing frameworks to streamline testing processes and improve overall code quality. Collaborated closely with different teams to design, develop, and deploy scalable web solutions. Actively participated in code reviews, offering valuable feedback, and following industry best practices in software development. Explored new technologies and methodologies such as GraphQL, Docker, and Kubernetes to enhance project capabilities.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">React.js</span>
+                                <span class="tag">Node.js</span>
+                                <span class="tag">MongoDB</span>
+                                <span class="tag">Testing</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Open-Source Contributor -->
+                    <div class="timeline-item observe">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Open-Source Contributor</h3>
+                                <span class="timeline-period">May 2024 - Aug 2024</span>
+                            </div>
+                            <p class="timeline-company">GirlScript Summer of Code · Part-time · Remote</p>
+                            <p class="timeline-description">Contributed to open-source projects by implementing new features, fixing bugs, and improving project documentation. Collaborated with global developers, participating in code reviews and providing feedback to ensure code quality. Enhanced project efficiency by optimizing code and ensuring compatibility across platforms. Wrote and maintained technical documentation, improving accessibility for future contributors. Actively participated in feature planning and agile development, ensuring timely delivery of updates.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">GitHub</span>
+                                <span class="tag">React.js</span>
+                                <span class="tag">AngularJS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Mobile Application Developer -->
+                    <div class="timeline-item observe">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Mobile Application Developer - Intern</h3>
+                                <span class="timeline-period">Jul 2023 - Sep 2023</span>
+                            </div>
+                            <p class="timeline-company">Bolt IoT · Internship · Bengaluru, Remote</p>
+                            <p class="timeline-description">Designed and developed mobile applications integrating Internet of Things (IoT) and Machine Learning (ML), contributing to Bolt IoT's product ecosystem. Worked extensively with React Native to implement user-friendly interfaces and features, improving the overall user experience of the mobile platform. Contributed to the development of scalable and efficient mobile solutions, ensuring seamless communication with IoT devices. Collaborated with cross-functional teams to ideate, test, and enhance application functionalities while addressing technical challenges.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">React Native</span>
+                                <span class="tag">IoT</span>
+                                <span class="tag">Machine Learning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Summer Research Intern -->
+                    <div class="timeline-item observe">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Summer Research Intern</h3>
+                                <span class="timeline-period">May 2023 - Jul 2023</span>
+                            </div>
+                            <p class="timeline-company">IIT (BHU) Varanasi · Internship · On-site</p>
+                            <p class="timeline-description">Conducted extensive analysis of various research papers on the partitioned approach to Wireless Sensor Networks (WSN), gaining deep insights into existing methodologies and their limitations. Optimized existing techniques by developing a novel approach known as Disc-Based Partitioning WSN, achieving an almost 2% increase in efficiency while utilizing 3.5-4% fewer resources. Implemented the newly developed approach using online simulation tools, rigorously testing and verifying its performance and reliability. Presented research outcomes to academic mentors and peers, effectively communicating the significance and potential applications of the optimized WSN technique.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">WSN</span>
+                                <span class="tag">MATLAB</span>
+                                <span class="tag">Research</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Power Programmer -->
+                    <div class="timeline-item observe">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Power Programmer</h3>
+                                <span class="timeline-period">Apr 2023</span>
+                            </div>
+                            <p class="timeline-company">Infosys · Freelance · Bengaluru, Remote</p>
+                            <p class="timeline-description">Developed a local Couchbase Lite database for mobile applications to support offline data storage and synchronization. Integrated React Native with Couchbase DB, ensuring seamless data management and synchronization across mobile platforms. Optimized data queries and app performance by designing efficient data models and improving sync processes. Implemented data security measures to ensure compliance with privacy standards and protect stored information.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Couchbase</span>
+                                <span class="tag">React Native</span>
+                                <span class="tag">Databases</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- ESG Data Analyst -->
+                    <div class="timeline-item observe">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>ESG Data Analyst</h3>
+                                <span class="timeline-period">Mar 2023</span>
+                            </div>
+                            <p class="timeline-company">Tata Consultancy Services · Freelance · Gurugram, Remote</p>
+                            <p class="timeline-description">Analyzed client sustainability needs and identified areas for improvement in ESG practices. Conducted comparative analysis of sustainability solutions, evaluating their impact and scalability. Developed fitment matrices to align the most suitable ESG strategies with client objectives. Collaborated with cross-functional teams to design custom ESG solutions for clients. Ensured accuracy and reliability in ESG data collection, verification, and reporting.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Data Analysis</span>
+                                <span class="tag">ESG</span>
+                                <span class="tag">Analytics</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cyber Security Analyst -->
+                    <div class="timeline-item observe">
+                        <div class="timeline-marker">
+                            <div class="timeline-dot"></div>
+                        </div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <h3>Cyber Security Analyst</h3>
+                                <span class="timeline-period">Mar 2023</span>
+                            </div>
+                            <p class="timeline-company">Mastercard · Freelance · Gurugram, Remote</p>
+                            <p class="timeline-description">Designed phishing email simulations to identify organizational email security vulnerabilities. Analyzed simulation results to pinpoint gaps in cybersecurity and recommend improvements. Developed detailed reports outlining phishing trends and strategies to mitigate potential risks. Collaborated with cross-functional teams to design tailored anti-phishing training programs. Evaluated the effectiveness of simulation exercises, ensuring continuous security enhancements.</p>
+                            <div class="timeline-tags">
+                                <span class="tag">Cybersecurity</span>
+                                <span class="tag">Analysis</span>
+                                <span class="tag">Training</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Education Section -->
+        <section id="education" class="education-section">
+            <div class="container">
+                <h2 class="section-title">Education</h2>
+                <div class="education-list">
+                    <!-- BTech -->
+                    <div class="education-item observe">
+                        <div class="education-header">
+                            <div>
+                                <h3>Bachelor of Technology - B.Tech</h3>
+                                <p class="institution">Indian Institute of Information Technology Senapati, Manipur</p>
+                            </div>
+                            <span class="year">Dec 2021 - Apr 2025</span>
+                        </div>
+                        <p class="details"><strong>Electronics and Communication Engineering</strong></p>
+                        <div class="grade-info">
+                            <strong>Grade: 8.87 out of 10.00</strong>
+                            <div class="achievement-badge">Silver Medalist of the Batch</div>
+                        </div>
+                    </div>
+
+                    <!-- Senior Secondary -->
+                    <div class="education-item observe">
+                        <div class="education-header">
+                            <div>
+                                <h3>Senior Secondary School</h3>
+                                <p class="institution">Sunbeam School Varuna</p>
+                            </div>
+                            <span class="year">Apr 2019 - Mar 2021</span>
+                        </div>
+                        <p class="details"><strong>PCM and Computer Science</strong></p>
+                        <div class="grade-info">
+                            <strong>Grade: 93.80 out of 100.00</strong>
+                            <div class="subjects">
+                                <strong>Subject Scores:</strong> Mathematics: 97, Physics: 92, Chemistry: 95, Computer Science: 94
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- High School -->
+                    <div class="education-item observe">
+                        <div class="education-header">
+                            <div>
+                                <h3>High School</h3>
+                                <p class="institution">Sunbeam School Varuna</p>
+                            </div>
+                            <span class="year">Apr 2017 - Mar 2019</span>
+                        </div>
+                        <p class="details"><strong>Science & Mathematics</strong></p>
+                        <div class="grade-info">
+                            <strong>Grade: 95.33 out of 100.00</strong>
+                            <div class="subjects">
+                                <strong>Subject Scores:</strong> Mathematics: 95, Science: 98, Foundation of IT: 97
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+                <h2 class="section-title">Certifications</h2>
+                <div class="certifications-grid">
+                    <div class="cert-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 2l6 7"></path>
+                            <path d="M9 20c-1 .5-2 1-3 1s-2-.5-3-1"></path>
+                            <path d="M15 20c1 .5 2 1 3 1s2-.5 3-1"></path>
+                            <path d="M9 14h6"></path>
+                        </svg>
+                        <p>AWS Certified Solutions Architect</p>
+                    </div>
+
+                    <div class="cert-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 2l6 7"></path>
+                            <path d="M9 20c-1 .5-2 1-3 1s-2-.5-3-1"></path>
+                            <path d="M15 20c1 .5 2 1 3 1s2-.5 3-1"></path>
+                            <path d="M9 14h6"></path>
+                        </svg>
+                        <p>Google Cloud Professional Developer</p>
+                    </div>
+
+                    <div class="cert-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 2l6 7"></path>
+                            <path d="M9 20c-1 .5-2 1-3 1s-2-.5-3-1"></path>
+                            <path d="M15 20c1 .5 2 1 3 1s2-.5 3-1"></path>
+                            <path d="M9 14h6"></path>
+                        </svg>
+                        <p>Certified Kubernetes Administrator</p>
+                    </div>
+
+                    <div class="cert-item">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 2l6 7"></path>
+                            <path d="M9 20c-1 .5-2 1-3 1s-2-.5-3-1"></path>
+                            <path d="M15 20c1 .5 2 1 3 1s2-.5 3-1"></path>
+                            <path d="M9 14h6"></path>
+                        </svg>
+                        <p>MongoDB Certified Developer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section">
+            <div class="container">
+                <h2 class="section-title">Achievements</h2>
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 2l6 7"></path>
+                            <path d="M9 20c-1 .5-2 1-3 1s-2-.5-3-1"></path>
+                            <path d="M15 20c1 .5 2 1 3 1s2-.5 3-1"></path>
+                            <path d="M9 14h6"></path>
+                        </svg>
+                        <h3>Best Developer Award</h3>
+                        <p>Recognized for outstanding contributions to tech community</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 2l6 7"></path>
+                            <path d="M9 20c-1 .5-2 1-3 1s-2-.5-3-1"></path>
+                            <path d="M15 20c1 .5 2 1 3 1s2-.5 3-1"></path>
+                            <path d="M9 14h6"></path>
+                        </svg>
+                        <h3>Open Source Contributor</h3>
+                        <p>Active contributor to 15+ open source projects</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M6 9L12 2l6 7"></path>
+                            <path d="M9 20c-1 .5-2 1-3 1s-2-.5-3-1"></path>
+                            <path d="M15 20c1 .5 2 1 3 1s2-.5 3-1"></path>
+                            <path d="M9 14h6"></path>
+                        </svg>
+                        <h3>Tech Speaker</h3>
+                        <p>Delivered talks at 10+ tech conferences and meetups</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <h2 class="section-title">Technical Skills</h2>
+                <div class="skills-grid">
+                    <div class="skill-group">
+                        <h3>Frontend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">React</span>
+                            <span class="skill-tag">Next.js</span>
+                            <span class="skill-tag">TypeScript</span>
+                            <span class="skill-tag">Tailwind CSS</span>
+                            <span class="skill-tag">Vue.js</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Backend</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Node.js</span>
+                            <span class="skill-tag">Express</span>
+                            <span class="skill-tag">Python</span>
+                            <span class="skill-tag">PostgreSQL</span>
+                            <span class="skill-tag">MongoDB</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>DevOps & Tools</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">Docker</span>
+                            <span class="skill-tag">Kubernetes</span>
+                            <span class="skill-tag">AWS</span>
+                            <span class="skill-tag">Git</span>
+                            <span class="skill-tag">CI/CD</span>
+                        </div>
+                    </div>
+
+                    <div class="skill-group">
+                        <h3>Other</h3>
+                        <div class="skill-tags">
+                            <span class="skill-tag">GraphQL</span>
+                            <span class="skill-tag">REST APIs</span>
+                            <span class="skill-tag">Testing</span>
+                            <span class="skill-tag">Agile</span>
+                            <span class="skill-tag">System Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <div class="footer-logo">
+                        <div class="logo-icon">TS</div>
+                        <span class="gradient-text">Tanishq Singh</span>
+                    </div>
+                    <p>Software Developer</p>
+                </div>
+
+                <!-- About Section -->
+                <div class="footer-section">
+                    <h4>About</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html#bio">About Me</a></li>
+                        <li><a href="experience.html#work">Experience</a></li>
+                    </ul>
+                </div>
+
+                <!-- Explore More Section -->
+                <div class="footer-section">
+                    <h4>Explore More</h4>
+                    <ul>
+                        <li><a href="projects.html#personal">Projects</a></li>
+                        <li><a href="services.html#products">Services</a></li>
+                    </ul>
+                </div>
+
+                <!-- Registered Address Section -->
+                <div class="footer-section">
+                    <h4>Registered Address</h4>
+                    <p class="address-line">Sa 6/186 NL1,</p>
+                    <p class="address-line">Sri Nagar Colony, Pahariya,</p>
+                    <p class="address-line">Varanasi, UP - 221007, IN</p>
+                </div>
+
+                <!-- Connect Section -->
+                <div class="footer-section">
+                    <h4>Connect</h4>
+                    <div class="footer-social">
+                        <a href="https://linkedin.tanishqsingh.in" target="_blank" rel="noopener noreferrer" title="LinkedIn">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-linkedin" viewBox="0 0 16 16">
+                            <path d="M0 1.146C0 .513.526 0 1.175 0h13.65C15.474 0 16 .513 16 1.146v13.708c0 .633-.526 1.146-1.175 1.146H1.175C.526 16 0 15.487 0 14.854zm4.943 12.248V6.169H2.542v7.225zm-1.2-8.212c.837 0 1.358-.554 1.358-1.248-.015-.709-.52-1.248-1.342-1.248S2.4 3.226 2.4 3.934c0 .694.521 1.248 1.327 1.248zm4.908 8.212V9.359c0-.216.016-.432.08-.586.173-.431.568-.878 1.232-.878.869 0 1.216.662 1.216 1.634v3.865h2.401V9.25c0-2.22-1.184-3.252-2.764-3.252-1.274 0-1.845.7-2.165 1.193v.025h-.016l.016-.025V6.169h-2.4c.03.678 0 7.225 0 7.225z"/>
+                            </svg>
+                        </a>
+                        <a href="https://instagram.tanishqsingh.in" target="_blank" rel="noopener noreferrer" title="Instagram">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
+                            <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.9 3.9 0 0 0-1.417.923A3.9 3.9 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.9 3.9 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.9 3.9 0 0 0-.923-1.417A3.9 3.9 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599s.453.546.598.92c.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.5 2.5 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.5 2.5 0 0 1-.92-.598 2.5 2.5 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233s.008-2.388.046-3.231c.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92s.546-.453.92-.598c.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92m-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217m0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334"/>
+                            </svg>
+                        </a>
+                        <a href="https://facebook.tanishqsingh.in" target="_blank" rel="noopener noreferrer" title="Facebook">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951"/>
+                            </svg>
+                        </a>
+                        <a href="https://x.tanishqsingh.in" target="_blank" rel="noopener noreferrer" title="X">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-twitter-x" viewBox="0 0 16 16">
+                            <path d="M12.6.75h2.454l-5.36 6.142L16 15.25h-4.937l-3.867-5.07-4.425 5.07H.316l5.733-6.57L0 .75h5.063l3.495 4.633L12.601.75Zm-.86 13.028h1.36L4.323 2.145H2.865z"/>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> Tanishq Singh. All rights reserved.</p>
+                <div class="footer-links" style="align-self: center;">
+                    <a href="assets/pdfs/privacy-policy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>
+                    <a>|</a>
+                    <a href="assets/pdfs/terms-of-service.html" target="_blank" rel="noopener noreferrer">Terms of Service</a>
+                </div>
+            </div>
+
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
