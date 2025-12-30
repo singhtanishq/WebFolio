@@ -2608,7 +2608,7 @@ body {
             border: 1px solid rgba(255, 255, 255, 0.1);
             border-radius: 1rem;
             padding: 2rem;
-            text-align: justify;
+            text-align: left;
             transition: var(--transition);
         }
 
@@ -2851,3 +2851,21 @@ body {
                 align-self: flex-start;
             }
         }
+
+/* Desktop – full text + justified */
+.timeline-description {
+    text-align: justify;
+}
+.timeline-description::before {
+    content: attr(data-full);
+}
+
+/* Mobile – short text + left aligned */
+@media (max-width: 768px) {
+    .timeline-description {
+        text-align: left;
+    }
+    .timeline-description::before {
+        content: attr(data-short);
+    }
+}
