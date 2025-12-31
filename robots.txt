@@ -5,7 +5,6 @@ Sitemap: https://tanishqsingh.in/sitemap.xml
 Sitemap: https://tanishqsingh.in/seo/sitemap-pages.xml
 Sitemap: https://tanishqsingh.in/seo/sitemap-images.xml
 
-# Crawl-delay for bad bots
 User-agent: AhrefsBot
 Crawl-delay: 10
 
