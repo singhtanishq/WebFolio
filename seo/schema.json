@@ -12,8 +12,6 @@
     "https://whatsapp.tanishqsingh.in"
   ],
   "jobTitle": "Software Developer",
-  "worksFor": {
-    "@type": "Organization",
-    "name": "Tanishq Singh"
-  }
+  "description": "Software Developer building scalable, user-centric web applications.",
+  "image": "https://tanishqsingh.in/assets/images/logo.png"
 }
