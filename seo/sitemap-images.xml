@@ -1,3 +1,57 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="https://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="https://www.google.com/schemas/sitemap-image/1.1">
+
+  <url>
+    <loc>https://tanishqsingh.in/</loc>
+    <image:image>
+      <image:loc>https://tanishqsingh.in/assets/images/logo.png</image:loc>
+      <image:caption>Tanishq Singh - Software Developer</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://tanishqsingh.in/assets/images/logo.png</image:loc>
+      <image:caption>Tanishq Singh - Profile</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tanishqsingh.in/projects.html</loc>
+    <image:image>
+      <image:loc>https://tanishqsingh.in/assets/images/code.jpg</image:loc>
+      <image:caption>Projects - Tanishq Singh</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tanishqsingh.in/about.html</loc>
+    <image:image>
+      <image:loc>https://tanishqsingh.in/assets/images/logo.png</image:loc>
+      <image:caption>About — Tanishq Singh</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tanishqsingh.in/experience.html</loc>
+    <image:image>
+      <image:loc>https://tanishqsingh.in/assets/images/logo.png</image:loc>
+      <image:caption>Experience — Tanishq Singh</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tanishqsingh.in/services.html</loc>
+    <image:image>
+      <image:loc>https://tanishqsingh.in/assets/images/logo.png</image:loc>
+      <image:caption>Services — Tanishq Singh</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://tanishqsingh.in/contact.html</loc>
+    <image:image>
+      <image:loc>https://tanishqsingh.in/assets/images/logo.png</image:loc>
+      <image:caption>Contact — Tanishq Singh</image:caption>
+    </image:image>
+  </url>
+
 </urlset>
