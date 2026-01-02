@@ -1,11 +1,3 @@
-// ============================================
-// COMPLETE JAVASCRIPT FOR TANISHQ SINGH PORTFOLIO
-// ============================================
-
-// ============================================
-// HEADER & NAVIGATION
-// ============================================
-
 const header = document.querySelector(".header")
 const mobileMenuBtn = document.getElementById("mobileMenuBtn")
 const mobileNav = document.getElementById("mobileNav")
@@ -13,7 +5,6 @@ const mobileNavToggles = document.querySelectorAll(".mobile-nav-toggle")
 const mobileNavLinks = document.querySelectorAll(".mobile-nav-link")
 const navLinks = document.querySelectorAll(".nav-link")
 
-// Sticky header on scroll
 window.addEventListener("scroll", () => {
   if (window.scrollY > 50) {
     header.classList.add("scrolled")
@@ -22,20 +13,17 @@ window.addEventListener("scroll", () => {
   }
 })
 
-// Mobile menu toggle
 mobileMenuBtn.addEventListener("click", () => {
   mobileMenuBtn.classList.toggle("active")
   mobileNav.classList.toggle("active")
 })
 
-// Mobile dropdown toggles
 mobileNavToggles.forEach((toggle) => {
   toggle.addEventListener("click", (e) => {
     e.preventDefault()
     const dropdown = toggle.nextElementSibling
     dropdown.classList.toggle("active")
 
-    // Close other dropdowns
     mobileNavToggles.forEach((otherToggle) => {
       if (otherToggle !== toggle) {
         otherToggle.nextElementSibling.classList.remove("active")
@@ -44,7 +32,6 @@ mobileNavToggles.forEach((toggle) => {
   })
 })
 
-// Close mobile menu when clicking on a link
 mobileNavLinks.forEach((link) => {
   link.addEventListener("click", () => {
     mobileMenuBtn.classList.remove("active")
@@ -52,7 +39,6 @@ mobileNavLinks.forEach((link) => {
   })
 })
 
-// Update active nav link based on scroll position
 window.addEventListener("scroll", () => {
   updateActiveNavLink()
 })
@@ -77,10 +63,6 @@ function updateActiveNavLink() {
   })
 }
 
-// ============================================
-// SMOOTH SCROLL BEHAVIOR
-// ============================================
-
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener("click", function (e) {
     e.preventDefault()
@@ -93,10 +75,6 @@ document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
     }
   })
 })
-
-// ============================================
-// CONTACT FORM
-// ============================================
 
 const contactForm = document.getElementById("contactForm")
 const formMessage = document.getElementById("formMessage")
@@ -112,35 +90,28 @@ if (contactForm) {
       message: document.getElementById("message").value.trim(),
     }
 
-    // Validate form
     if (!formData.name || !formData.email || !formData.subject || !formData.message) {
       showFormMessage("Please fill in all fields", "error")
       return
     }
 
-    // Validate email
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
     if (!emailRegex.test(formData.email)) {
       showFormMessage("Please enter a valid email address", "error")
       return
     }
 
-    // Validate message length
     if (formData.message.length < 10) {
       showFormMessage("Message must be at least 10 characters long", "error")
       return
     }
 
-    // Simulate form submission
     console.log("Form submitted:", formData)
 
-    // Show success message
     showFormMessage("Message sent successfully! I'll get back to you soon.", "success")
 
-    // Reset form
     contactForm.reset()
 
-    // Hide message after 5 seconds
     setTimeout(() => {
       formMessage.classList.remove("success", "error")
     }, 5000)
@@ -152,10 +123,6 @@ function showFormMessage(message, type) {
   formMessage.classList.remove("success", "error")
   formMessage.classList.add(type)
 }
-
-// ============================================
-// ANIMATIONS ON SCROLL
-// ============================================
 
 const observerOptions = {
   threshold: 0.1,
@@ -171,14 +138,9 @@ const observer = new IntersectionObserver((entries) => {
   })
 }, observerOptions)
 
-// Observe all animated elements
 document.querySelectorAll('[class*="animate-"]').forEach((el) => {
   observer.observe(el)
 })
-
-// ============================================
-// MOUSE TRACKING EFFECT
-// ============================================
 
 let mouseX = 0
 let mouseY = 0
@@ -187,10 +149,6 @@ document.addEventListener("mousemove", (e) => {
   mouseX = e.clientX
   mouseY = e.clientY
 })
-
-// ============================================
-// PARALLAX EFFECT
-// ============================================
 
 window.addEventListener("scroll", () => {
   const blobs = document.querySelectorAll(".gradient-blob")
@@ -201,10 +159,6 @@ window.addEventListener("scroll", () => {
     blob.style.transform = `translateY(${scrollY * speed}px)`
   })
 })
-
-// ============================================
-// CARD HOVER EFFECTS
-// ============================================
 
 const cards = document.querySelectorAll(
   ".feature-card, .project-card, .profile-card, .social-card, .experience-item, .education-item, .cert-item, .achievement-card, .service-card, .consultancy-card, .more-service-card, .pricing-card, .contact-info-card, .support-card",
@@ -220,10 +174,6 @@ cards.forEach((card) => {
   })
 })
 
-// ============================================
-// DROPDOWN MENU INTERACTIONS
-// ============================================
-
 const dropdownToggles = document.querySelectorAll(".dropdown-toggle")
 
 dropdownToggles.forEach((toggle) => {
@@ -232,11 +182,6 @@ dropdownToggles.forEach((toggle) => {
   })
 })
 
-// ============================================
-// UTILITY FUNCTIONS
-// ============================================
-
-// Debounce function for performance
 function debounce(func, wait) {
   let timeout
   return function executedFunction(...args) {
@@ -249,7 +194,6 @@ function debounce(func, wait) {
   }
 }
 
-// Throttle function for performance
 function throttle(func, limit) {
   let inThrottle
   return function (...args) {
@@ -261,15 +205,9 @@ function throttle(func, limit) {
   }
 }
 
-// ============================================
-// PAGE LOAD ANIMATIONS
-// ============================================
-
 window.addEventListener("load", () => {
-  // Add loaded class to body
   document.body.classList.add("loaded")
 
-  // Trigger animations for visible elements
   document.querySelectorAll('[class*="animate-"]').forEach((el, index) => {
     setTimeout(() => {
       el.style.animation = `slide-up 0.8s ease-out forwards`
@@ -277,29 +215,17 @@ window.addEventListener("load", () => {
   })
 })
 
-// ============================================
-// ACCESSIBILITY IMPROVEMENTS
-// ============================================
-
-// Keyboard navigation for dropdowns
 document.addEventListener("keydown", (e) => {
   if (e.key === "Escape") {
-    // Close mobile menu
     mobileMenuBtn.classList.remove("active")
     mobileNav.classList.remove("active")
 
-    // Close mobile dropdowns
     document.querySelectorAll(".mobile-dropdown").forEach((dropdown) => {
       dropdown.classList.remove("active")
     })
   }
 })
 
-// ============================================
-// PERFORMANCE OPTIMIZATIONS
-// ============================================
-
-// Lazy load images (if any)
 if ("IntersectionObserver" in window) {
   const imageObserver = new IntersectionObserver((entries, observer) => {
     entries.forEach((entry) => {
@@ -317,17 +243,11 @@ if ("IntersectionObserver" in window) {
   })
 }
 
-// ============================================
-// INITIALIZATION
-// ============================================
-
-// Initialize on DOM ready
 document.addEventListener("DOMContentLoaded", () => {
   console.log("Portfolio loaded successfully")
   updateActiveNavLink()
 })
 
-// Set current year dynamically
 document.addEventListener("DOMContentLoaded", function() {
     const yearElement = document.getElementById("year");
     if (yearElement) {
@@ -335,9 +255,24 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 });
 
-// ============================================
-// EXPORT FOR EXTERNAL USE (if needed)
-// ============================================
+function updateTimelineDescriptions() {
+  document.querySelectorAll(".timeline-description").forEach((el) => {
+    const full = el.getAttribute("data-full");
+    const short = el.getAttribute("data-short");
+
+    if (window.innerWidth > 768) {
+      el.innerHTML = full.replace(/\n/g, "<br>");
+      el.style.textAlign = "justify";
+    } else {
+      el.innerHTML = short.replace(/\n/g, "<br>");
+      el.style.textAlign = "left";
+    }
+  });
+}
+
+updateTimelineDescriptions();
+
+window.addEventListener("resize", updateTimelineDescriptions);
 
 window.portfolio = {
   updateActiveNavLink,
