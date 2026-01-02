@@ -1,1 +1,1 @@
-🌐 Portfolio: [tanishqsingh.in](https://tanishqsingh.in)
+Portfolio: [tanishqsingh.in](https://tanishqsingh.in)
