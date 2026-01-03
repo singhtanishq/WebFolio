@@ -2954,10 +2954,11 @@ body {
   line-height: 1.6;
   color: rgb(198, 198, 198);
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
-  width: max-content;
+  max-width: fit-content;
   text-align: center; 
 }
 
 .confidential-note strong {
   color: #ff0000;
 }
+
