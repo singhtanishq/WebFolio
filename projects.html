@@ -25,7 +25,6 @@
   <link rel="stylesheet" href="styles.css" />
 </head>
 
-
 <body>
     <!-- Header/Navigation -->
     <header class="header sticky-header">
@@ -162,135 +161,201 @@
             <div class="gradient-blob blob-2"></div>
         </div>
         
-        <!-- Personal Projects Section -->
-        <section id="personal" class="projects-detail-section">
+        <section class="projects-section">
             <div class="container">
-                <h1 class="section-title">Personal Projects</h1>
-                <div class="projects-detail-grid">
-                    <div class="project-detail-card">
-                        <h3>E-Commerce Platform</h3>
-                        <p>Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.</p>
-                        <div class="tech-tags">
-                            <span>Next.js</span>
-                            <span>TypeScript</span>
-                            <span>Stripe</span>
-                            <span>PostgreSQL</span>
+                <div class="section-header">
+                    <h2 class="section-title">Featured Projects</h2>
+                    <p class="section-subtitle">Showcase of recent work and innovations</p>
+                </div>
+
+                <div class="projects-grid">
+
+                    <div class="project-card animate-slide-up">
+                        <div class="project-image">
+                            <img src="assets/images/urban.png" alt="UrbanEngage Project">
                         </div>
-                        <a href="#" class="project-link">View Project →</a>
+                        <h3>Urban Engage : <span style="color: aliceblue; font-size:15px;">an E-Governance Platform</span></h3>
+                        <p>Streamlines civic engagement with dashboards, forums, events, petitions, polls, volunteer management, and user administration.</p>
+                        <div class="project-tags">
+                            <span class="tag">React</span>
+                            <span class="tag">Node.js</span>
+                            <span class="tag">Express.js</span>
+                            <span class="tag">MongoDB</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/singhtanishq/UrbanEngage" target="_blank" class="project-link">
+                            <img src="/assets/images/github.png" style="width: 35px; border-radius: 25px;">
+                            </a>
+                            <a href="https://github.com/singhtanishq/UrbanEngage" target="_blank" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="project-card animate-slide-up" style="animation-delay: 0.1s">
+                        <div class="project-image">
+                            <img src="assets/images/sabai.png" alt="SabaiCraft Project">
+                        </div>
+                        <h3>Sabai Craft : <span style="color: aliceblue;font-size: 15px;"> An E-Commerce Platform </span></h3>
+                        <p>Interactive ecommerce UI with dynamic banners, cart, checkout, responsive layout, and seamless navigation experience.</p>
+                        <div class="project-tags">
+                            <span class="tag">Frontend Design</span>
+                            <span class="tag">UI/UX</span>
+                            <span class="tag">Design Principles</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/singhtanishq/SabaiCraft" target="_blank" class="project-link">
+                            <img src="/assets/images/github.png" style="width: 35px; border-radius: 25px;">
+                            </a>
+                            <a href="https://github.com/singhtanishq/SabaiCraft" target="_blank" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View
+                            </a>
+                        </div>
+                        </div>
+
+                        <div class="project-card animate-slide-up" style="animation-delay: 0.2s">
+                        <div class="project-image">
+                            <img src="assets/images/shelf.png" alt="ShelfSpace Project">
+                        </div>
+                        <h3>Shelf Space : <span style="color: aliceblue;font-size: 15px;">Book Shop Management</span></h3>
+                        <p>Streamlines bookshop operations with real-time inventory management, automated notifications and invoice generation.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">MySQL</span>
+                            <span class="tag">SMTP Lib</span>
+                            <span class="tag">FPDF Lib</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://github.com/singhtanishq/ShelfSpace"  target="_blank" class="project-link">
+                            <img src="/assets/images/github.png" style="width: 35px; border-radius: 25px;">
+                            </a>
+                            <a href="https://github.com/singhtanishq/ShelfSpace" target="_blank" class="project-link">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                            View
+                            </a>
+                        </div>
+                        </div>
+
+
+                </div>
+
+                <div class="section-cta">
+                    <div class="confidential-note">
+                        <strong>Note:</strong> Many projects are withheld from display due to company's confidentiality policies.
                     </div>
 
-                    <div class="project-detail-card">
-                        <h3>Task Management App</h3>
-                        <p>Collaborative task management tool with real-time updates, team collaboration, and analytics.</p>
-                        <div class="tech-tags">
-                            <span>React</span>
-                            <span>Firebase</span>
-                            <span>Tailwind CSS</span>
-                            <span>Redux</span>
-                        </div>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
-
-                    <div class="project-detail-card">
-                        <h3>AI Chat Application</h3>
-                        <p>Intelligent chatbot powered by machine learning with natural language processing capabilities.</p>
-                        <div class="tech-tags">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>React</span>
-                            <span>Node.js</span>
-                        </div>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
-
-                    <div class="project-detail-card">
-                        <h3>Data Visualization Dashboard</h3>
-                        <p>Interactive dashboard for visualizing complex datasets with real-time data updates.</p>
-                        <div class="tech-tags">
-                            <span>React</span>
-                            <span>D3.js</span>
-                            <span>Express</span>
-                            <span>MongoDB</span>
-                        </div>
-                        <a href="#" class="project-link">View Project →</a>
-                    </div>
+                    <br>
+                    <a href="projects.html#research" class="btn btn-primary">
+                        View Research Works
+                    </a>
                 </div>
             </div>
         </section>
 
         <!-- Research Works Section -->
-        <section id="research" class="research-section">
-            <div class="container">
-                <h2 class="section-title">Research Works</h2>
-                <div class="research-list">
-                    <div class="research-item">
-                        <div class="research-header">
-                            <div>
-                                <h3>Optimizing React Performance in Large-Scale Applications</h3>
-                                <p class="publication">Tech Journal Quarterly</p>
-                            </div>
-                            <span class="year">2025</span>
-                        </div>
-                        <p class="description">Research on performance optimization techniques for React applications handling millions of components.</p>
-                    </div>
+<section id="research" class="research-section">
+  <div class="container">
+    <h2 class="section-title">Research Works</h2>
+    <div class="research-list">
 
-                    <div class="research-item">
-                        <div class="research-header">
-                            <div>
-                                <h3>Machine Learning in Web Development</h3>
-                                <p class="publication">International Conference on Web Technologies</p>
-                            </div>
-                            <span class="year">2024</span>
-                        </div>
-                        <p class="description">Exploration of ML integration patterns and best practices for modern web applications.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <!-- Research 1 -->
+      <div class="research-item">
+        <div class="research-header">
+          <div>
+            <h3>Design & Optimization of Priority Encoder and AES-Based Cryptographic Engine</h3>
+            <p class="publication">VLSI Systems Design Report</p>
+          </div>
+          <span class="year">Oct 2024</span>
+        </div>
+        <p class="description">
+          Designed and optimized a 64-bit Priority Encoder and 128-bit AES Cryptographic Engine using Cadence tools across RTL–GDSII flow. Focused on power, area, and timing optimization for SoC integration.
+        </p>
+        <br>
+        <a href="https://drive.google.com/file/d/1wD47dh9et4E1t0fMiQNUphYvy6A1xcMT/view?usp=sharing" target="_blank" class="btn btn-primary">Download Report</a>
+      </div>
 
-        <!-- Open Source Section -->
-        <section id="opensource" class="opensource-section">
-            <div class="container">
-                <h2 class="section-title">Open Source Contributions</h2>
-                <div class="opensource-grid">
-                    <div class="opensource-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.375 3.375 0 0 0-1.025-2.431l1.425-1.425a3.375 3.375 0 0 1 .975 2.431V21"></path>
-                        </svg>
-                        <h3>React Query</h3>
-                        <p>Contributed performance improvements and bug fixes to the popular data fetching library.</p>
-                        <p class="contributions">15+ PRs merged</p>
-                    </div>
+      <!-- Research 2 -->
+      <div class="research-item">
+        <div class="research-header">
+          <div>
+            <h3>Concentric Disc-Based Partitioning in Wireless Sensor Networks (D-WSN)</h3>
+            <p class="publication">Wireless Networks Research Paper</p>
+          </div>
+          <span class="year">Jul 2023</span>
+        </div>
+        <p class="description">
+          Proposed a novel concentric disc-based partitioning scheme for efficient data collection and transmission in WSNs using mobile agents and rendezvous points.
+        </p>
+        <br>
+        <a href="https://drive.google.com/file/d/1x3iutY0BGn_T9hMbORp8zo6Nlcy_EE8V/view?usp=sharing" target="_blank" class="btn btn-primary">Download Report</a>
+      </div>
 
-                    <div class="opensource-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.375 3.375 0 0 0-1.025-2.431l1.425-1.425a3.375 3.375 0 0 1 .975 2.431V21"></path>
-                        </svg>
-                        <h3>Next.js</h3>
-                        <p>Enhanced documentation and contributed to core framework improvements.</p>
-                        <p class="contributions">8 PRs merged</p>
-                    </div>
+    </div>
+  </div>
+</section>
 
-                    <div class="opensource-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.375 3.375 0 0 0-1.025-2.431l1.425-1.425a3.375 3.375 0 0 1 .975 2.431V21"></path>
-                        </svg>
-                        <h3>TypeScript</h3>
-                        <p>Contributed type definitions and improved type inference for common patterns.</p>
-                        <p class="contributions">5 PRs merged</p>
-                    </div>
 
-                    <div class="opensource-card">
-                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                            <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.375 3.375 0 0 0-1.025-2.431l1.425-1.425a3.375 3.375 0 0 1 .975 2.431V21"></path>
-                        </svg>
-                        <h3>Tailwind CSS</h3>
-                        <p>Added new utility classes and improved plugin system documentation.</p>
-                        <p class="contributions">12 PRs merged</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+<!-- Open Source Section -->
+<section id="opensource" class="opensource-section">
+  <div class="container">
+    <h2 class="section-title">Open Source Contributions</h2>
+    <div class="opensource-grid">
+
+      <div class="opensource-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2a10 10 0 1 0 10 10A10.013 10.013 0 0 0 12 2Zm0 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Z"/>
+          <circle cx="12" cy="12" r="3"/>
+        </svg>
+        <h3>React Query</h3>
+        <p>Improved core performance and refined documentation for better developer experience.</p>
+        <p class="contributions">15+ PRs merged</p>
+      </div>
+
+      <div class="opensource-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M3 3h18v4H3zM3 9h18v12H3z"/>
+        </svg>
+        <h3>Next Framework</h3>
+        <p>Enhanced build optimization and contributed multiple fixes improving overall stability.</p>
+        <p class="contributions">8 PRs merged</p>
+      </div>
+
+      <div class="opensource-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2l9 4v6c0 5.25-3.25 10-9 12-5.75-2-9-6.75-9-12V6z"/>
+        </svg>
+        <h3>Type Library</h3>
+        <p>Added advanced type utilities and strengthened inference logic for reusable modules.</p>
+        <p class="contributions">5 PRs merged</p>
+      </div>
+
+      <div class="opensource-card">
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M4 4h16v4H4zM4 10h16v4H4zM4 16h16v4H4z"/>
+        </svg>
+        <h3>UI Toolkit</h3>
+        <p>Improved plugin flexibility and introduced new utilities for responsive styling systems.</p>
+        <p class="contributions">12 PRs merged</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
     </main>
 
     <!-- Footer -->
@@ -378,5 +443,3 @@
     <script src="script.js"></script>
 </body>
 </html>
-
-
