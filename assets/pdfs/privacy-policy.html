@@ -651,10 +651,14 @@
 
         <footer>
           <div class="footer-content">
-            <p>&copy; 2025 Tanishq Singh. All rights reserved. | <a href="https://www.tanishqsingh.in">www.tanishqsingh.in</a></p>
+            <p>&copy; <span id="current-year"></span> Tanishq Singh. All rights reserved. | <a href="https://www.tanishqsingh.in">www.tanishqsingh.in</a></p>
             <p>This Privacy Policy was last updated on October 18, 2025.</p>
           </div>
         </footer>
     </div>
 </body>
 </html>
+
+<script>
+  document.getElementById("current-year").textContent = new Date().getFullYear();
+</script>
