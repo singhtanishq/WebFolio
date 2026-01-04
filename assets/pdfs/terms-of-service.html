@@ -755,9 +755,16 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2025 Tanishq Singh. All rights reserved. | <a href="https://www.tanishqsingh.in">www.tanishqsingh.in</a></p>
-            <p>Unauthorized reproduction or redistribution of content from this website is prohibited.</p>
+            <p>
+            &copy; <span id="year"></span> Tanishq Singh. All rights reserved. |
+            <a href="https://www.tanishqsingh.in">www.tanishqsingh.in</a>
+            </p>
+           <p>Unauthorized reproduction or redistribution of content from this website is prohibited.</p>
         </div>
     </footer>
 </body>
 </html>
+
+<script>
+  document.getElementById("year").textContent = new Date().getFullYear();
+</script> 
