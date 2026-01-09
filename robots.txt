@@ -1,0 +1,16 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://tanishqsingh.in/sitemap.xml
+Sitemap: https://tanishqsingh.in/seo/sitemap-pages.xml
+Sitemap: https://tanishqsingh.in/seo/sitemap-images.xml
+
+User-agent: AhrefsBot
+Crawl-delay: 10
+
+User-agent: SemrushBot
+Crawl-delay: 10
+
+User-agent: MJ12bot
+Crawl-delay: 10
+ 

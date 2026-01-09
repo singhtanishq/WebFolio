@@ -1,0 +1,17 @@
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Tanishq Singh",
+  "url": "https://tanishqsingh.in/",
+  "sameAs": [
+    "https://linkedin.tanishqsingh.in",
+    "https://instagram.tanishqsingh.in",
+    "https://facebook.tanishqsingh.in",
+    "https://x.tanishqsingh.in",
+    "https://telegram.tanishqsingh.in",
+    "https://whatsapp.tanishqsingh.in"
+  ],
+  "jobTitle": "Software Developer",
+  "description": "Software Developer building scalable, user-centric web applications.",
+  "image": "https://tanishqsingh.in/assets/images/logo.webp"
+}
