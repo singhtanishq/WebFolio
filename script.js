@@ -661,7 +661,7 @@
   }
 
   if (form) {
-    form.addEventListener("submit", (e) => {
+    form.addEventListener("submit", async (e) => {
       e.preventDefault();
 
       const fields = {
@@ -699,14 +699,51 @@
       submitBtn.classList.add("loading");
       submitBtn.disabled = true;
 
-      setTimeout(() => {
+      try {
+        const response = await fetch(
+          "https://formsubmit.co/ajax/contact@tanishqsingh.in",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+              Accept: "application/json",
+            },
+            body: JSON.stringify({
+              name: data.name,
+              email: data.email,
+              subject: data.subject,
+              message: data.message,
+            }),
+          }
+        );
+
+        const result = await response.json();
+
+        if (!response.ok || String(result.success).toLowerCase() !== "true") {
+          throw new Error(result.message || "Unable to send message.");
+        }
+
+        showFormMessage(
+          "Message sent successfully! I'll get back to you soon. ✓",
+          "success"
+        );
+
+        form.reset();
+
+        setTimeout(() => {
+          formMsg.classList.remove("show");
+        }, 6000);
+      } catch (error) {
+        console.error("Contact form error:", error);
+
+        showFormMessage(
+          "Unable to send your message right now. Please try again later.",
+          "error"
+        );
+      } finally {
         submitBtn.classList.remove("loading");
         submitBtn.disabled = false;
-        console.info("Contact form submitted:", data);
-        showFormMessage("Message sent successfully! I'll get back to you soon. ✓", "success");
-        form.reset();
-        setTimeout(() => formMsg.classList.remove("show"), 6000);
-      }, 1100);
+      }
     });
   }
 
