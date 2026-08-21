@@ -4,8 +4,7 @@
  */
 
 const CONFIG = {
-  // Replace this with the deployed Cloudflare Worker URL before launch.
-  API_ENDPOINT: "",
+  API_ENDPOINT: "https://api.tanishqsingh.in/submit",
   DEMO_MODE: false,
   MAX_SCORE: 24
 };
@@ -256,6 +255,7 @@ async function submitLead(event) {
   const payload = {
     answers: QUESTIONS.map(q => ({id:q.id,value:state.answers[q.id]})),
     profile:{email,jobTitle,company,linkedin},
+    consent,
     metadata:{path:window.location.pathname,referrer:document.referrer || "",...captureUtm()}
   };
 
