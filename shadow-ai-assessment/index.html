@@ -228,9 +228,11 @@
             <label>Job title <span>*</span><input type="text" id="jobTitle" name="jobTitle" autocomplete="organization-title" placeholder="CISO, Head of Security, Head of AI..." required></label>
             <label>Company <span>*</span><input type="text" id="company" name="company" autocomplete="organization" placeholder="Company name" required></label>
             <label>LinkedIn URL <small>optional</small><input type="url" id="linkedin" name="linkedin" autocomplete="url" placeholder="https://www.linkedin.com/in/..." inputmode="url"></label>
-            <div class="cf-turnstile"
-                data-sitekey="0x4AAAAAAFA3YSY25CPnnmqI"
-                data-theme="dark">
+            <div class="turnstile-wrap">
+                <div class="cf-turnstile"
+                    data-sitekey="0x4AAAAAAFA3YSY25CPnnmqI"
+                    data-theme="dark">
+                </div>
             </div>
             <label class="consent"><input type="checkbox" id="consent" required><span>I want to receive my assessment result and report at this email address.</span></label>
             <button class="btn btn-primary" type="submit" id="leadButton">View My Free Score & Get My Report <span>→</span></button>
