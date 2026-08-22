@@ -49,7 +49,28 @@ img{max-width:100%;display:block}
 .topbar{height:72px;border-bottom:1px solid var(--line);background:rgba(5,6,11,.72);backdrop-filter:blur(18px);position:sticky;top:0;z-index:100}
 .topbar-inner{height:100%;display:flex;align-items:center;justify-content:space-between;gap:24px}
 .brand{display:inline-flex;align-items:center;gap:10px;font-family:var(--display);font-weight:700;font-size:14px}
-.brand-mark{display:grid;place-items:center;width:34px;height:34px;border-radius:10px;background:linear-gradient(135deg,#8b5cf6,#22d3ee);color:#05060b;font:700 11px var(--mono)}
+.brand-mark.logo-mark {
+  width: 40px;
+  height: 40px;
+  border-radius: 14px;
+  background: #070b13;
+  border: 1px solid rgba(148, 163, 184, 0.28);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  box-shadow:
+    0 0 0 1px rgba(34, 211, 238, 0.06),
+    0 8px 24px rgba(0, 0, 0, 0.28),
+    0 0 20px rgba(34, 211, 238, 0.08);
+}
+
+.brand-mark.logo-mark img {
+  width: 34px;
+  height: 34px;
+  object-fit: contain;
+  display: block;
+}
 .topbar-right{display:flex;align-items:center;gap:8px;color:var(--dim);font-size:12px;font-family:var(--mono);text-transform:uppercase;letter-spacing:.05em}
 .status-dot{width:7px;height:7px;border-radius:50%;background:var(--green);box-shadow:0 0 14px rgba(52,211,153,.8)}
 
