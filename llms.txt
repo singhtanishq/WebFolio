@@ -1,0 +1,16 @@
+# Tanishq Singh
+
+> Tanishq Singh is a software developer and the publisher of a public security research and assessment resource focused on Shadow AI detection, enterprise AI agents, and AI agent security.
+
+This site contains a free, self-guided Shadow AI Detection Assessment for understanding reported enterprise control coverage across AI agent discovery, identity and access, runtime controls, data protection, and governance.
+
+The assessment is based only on user-provided responses. It is a screening tool and does not constitute a penetration test, technical security audit, or independent validation of an organization's environment.
+
+## Assessment
+
+- [Shadow AI Detection Assessment](https://tanishqsingh.in/shadow-ai-assessment/): A 12-question, 24-point self-assessment covering discovery, identity and access, runtime controls, data protection, and governance for enterprise AI agents.
+- [Assessment sitemap](https://tanishqsingh.in/seo/sitemap-pages.xml): Canonical page index for the site, including the Shadow AI Detection Assessment.
+
+## Website
+
+- [Tanishq Singh](https://tanishqsingh.in/): Personal website and professional background.
