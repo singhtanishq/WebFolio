@@ -59,6 +59,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
+  <script src="https://challenges.cloudflare.com/turnstile/v0/api.js" async defer></script>
 </head>
 <body>
   <a class="skip-link" href="#assessment">Skip to assessment</a>
@@ -215,6 +216,10 @@
             <label>Job title <span>*</span><input type="text" id="jobTitle" name="jobTitle" autocomplete="organization-title" placeholder="CISO, Head of Security, Head of AI..." required></label>
             <label>Company <span>*</span><input type="text" id="company" name="company" autocomplete="organization" placeholder="Company name" required></label>
             <label>LinkedIn URL <small>optional</small><input type="url" id="linkedin" name="linkedin" autocomplete="url" placeholder="https://www.linkedin.com/in/..." inputmode="url"></label>
+            <div class="cf-turnstile"
+                data-sitekey="0x4AAAAAAFA3YSY25CPnnmqI"
+                data-theme="dark">
+            </div>
             <label class="consent"><input type="checkbox" id="consent" required><span>I want to receive my assessment result and report at this email address.</span></label>
             <button class="btn btn-primary" type="submit" id="leadButton">View My FREE Score & Get My Report <span>→</span></button>
             <p class="privacy-note">Only information needed to deliver and measure this experiment is requested. No passwords, credentials or security-sensitive details are collected here.</p>
