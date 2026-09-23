@@ -60,6 +60,13 @@ const CATEGORY_IDS = {
 
 const state = { answers:{}, result:null, stickySuppressed:false };
 
+let assessmentStartedTracked = false;
+
+function trackEvent(name, params = {}) {
+  if (typeof window.gtag !== "function") return;
+  window.gtag("event", name, params);
+}
+
 const $ = (selector, root=document) => root.querySelector(selector);
 const $$ = (selector, root=document) => [...root.querySelectorAll(selector)];
 
@@ -94,6 +101,16 @@ function renderQuestions() {
   $$('input[type="radio"]', list).forEach(input => {
     input.addEventListener("change", () => {
       state.answers[input.name] = Number(input.value);
+
+      if (!assessmentStartedTracked) {
+        assessmentStartedTracked = true;
+
+        trackEvent("assessment_start", {
+          assessment_name: "shadow_ai_detection_assessment",
+          assessment_version: "v1"
+        });
+      }
+
       const question = input.closest(".question");
       question.classList.add("is-active");
       updateProgress();
@@ -292,6 +309,11 @@ async function submitLead(event) {
     if (!response.ok) throw new Error("The results service returned an error. Please try again.");
     const data = await response.json();
     if (!data || !data.ok || !data.result) throw new Error("The result could not be verified. Please try again.");
+    trackEvent("generate_lead", {
+      assessment_name: "shadow_ai_detection_assessment",
+      assessment_version: "v1"
+    });
+
     renderResult(data.result);
   } catch (err) {
     error.textContent = err.message || "Something went wrong. Please try again.";
@@ -352,6 +374,12 @@ function setup() {
       document.querySelector(`[data-question="${unanswered.id}"]`)?.scrollIntoView({behavior:"smooth",block:"center"});
       return;
     }
+    trackEvent("assessment_complete", {
+      assessment_name: "shadow_ai_detection_assessment",
+      assessment_version: "v1",
+      question_count: QUESTIONS.length
+    });
+
     showGate();
   });
 
