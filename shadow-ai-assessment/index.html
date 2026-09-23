@@ -220,7 +220,32 @@
           <div>
             <h2>Your screening is complete.</h2>
             <p>You have answered all 12 questions. Enter a few professional details to reveal the exact screening score and receive the detailed result breakdown.</p>
-            <div class="blurred-score" aria-hidden="true"><span>••</span><small>/ 24</small></div>
+            <div class="privacy-assurance">
+              <strong>
+                <svg class="privacy-icon" viewBox="0 0 24 24" aria-hidden="true">
+                  <path d="M12 3l7 3v5c0 4.7-2.9 8.1-7 10-4.1-1.9-7-5.3-7-10V6l7-3z"></path>
+                  <path d="m9 12 2 2 4-4"></path>
+                </svg>
+                No spam. No sales emails.
+              </strong>
+              <span>Your email is only used to deliver your assessment result and report.</span>
+            </div>
+
+            <div class="score-preview">
+              <div class="score-preview-top">
+                <span>YOUR SCREENING SCORE</span>
+                <em>READY TO REVEAL</em>
+              </div>
+              <div class="score-preview-value">
+                <strong>••</strong>
+                <span>/ 24</span>
+              </div>
+              <div class="score-preview-bottom">
+                <span>12 questions completed</span>
+                <span>Exact score revealed after submission</span>
+              </div>
+            </div>
+
             <p class="gate-disclaimer">The exact score is derived from your answers and is not a security certification, audit opinion or guarantee.</p>
           </div>
           <form id="leadForm" class="lead-form" novalidate>
