@@ -237,6 +237,17 @@ async function submitLead(event) {
     error.hidden = false;
     return;
   }
+
+  const turnstileToken = document.querySelector(
+    '#leadForm input[name="cf-turnstile-response"]'
+  )?.value || "";
+
+  if (!turnstileToken) {
+    error.textContent = "Please complete the security verification and try again.";
+    error.hidden = false;
+    return;
+  }
+
   if (!/^\S+@\S+\.\S+$/.test(email)) {
     error.textContent = "Please enter a valid work email address.";
     error.hidden = false;
@@ -256,6 +267,7 @@ async function submitLead(event) {
     answers: QUESTIONS.map(q => ({id:q.id,value:state.answers[q.id]})),
     profile:{email,jobTitle,company,linkedin},
     consent,
+    turnstileToken,
     metadata:{path:window.location.pathname,referrer:document.referrer || "",...captureUtm()}
   };
 
