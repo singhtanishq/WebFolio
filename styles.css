@@ -3434,3 +3434,46 @@ html.loaded .hero-title .wi,
     display: none !important;
   }
 }
+
+.form-shell .form-grid > .full {
+  min-width: 0;
+}
+
+#contactTurnstile {
+  width: 100%;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: visible;
+}
+
+#contactTurnstile > div {
+  flex: 0 0 auto;
+  margin-inline: auto;
+}
+
+@media (max-width: 399px) {
+  #contactTurnstile {
+    transform: scale(0.91);
+    transform-origin: center center;
+  }
+}
+
+@media (max-width: 360px) {
+  #contactTurnstile {
+    transform: scale(0.86);
+  }
+}
+
+@media (max-width: 340px) {
+  #contactTurnstile {
+    transform: scale(0.78);
+  }
+}
+
+@media (max-width: 320px) {
+  #contactTurnstile {
+    transform: scale(0.73);
+  }
+}
