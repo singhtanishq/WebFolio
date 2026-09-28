@@ -10,6 +10,11 @@
 
     gtag('config', 'G-D2R7K0CH46');
   </script>
+  <script
+    src="https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit"
+    async
+    defer
+  ></script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact — Tanishq Singh | Software Developer</title>
@@ -283,7 +288,16 @@
             <p>I usually reply within 24 hours — say hello any time.</p>
           </div>
 
-          <form id="contactForm" class="form-grid" action="https://formsubmit.co/contact@tanishqsingh.in" method="POST" novalidate>
+          <form id="contactForm" class="form-grid" method="POST" novalidate>
+            <input
+              type="text"
+              name="website"
+              value=""
+              tabindex="-1"
+              autocomplete="off"
+              aria-hidden="true"
+              style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0;pointer-events:none;"
+            />
             <div class="field">
               <input type="text" id="name" name="name" placeholder=" " autocomplete="name" />
               <label for="name">Your Name</label>
@@ -299,6 +313,13 @@
             <div class="field full">
               <textarea id="message" name="message" rows="6" placeholder=" "></textarea>
               <label for="message">Tell me about your project…</label>
+            </div>
+
+            <div
+              class="full"
+              style="display:flex; justify-content:flex-start; align-items:center; min-height:65px;"
+            >
+              <div id="contactTurnstile"></div>
             </div>
 
             <div class="full" style="display:flex; justify-content:flex-end">
